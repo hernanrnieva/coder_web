@@ -22,6 +22,42 @@
 
     <main>
         <h2>Contactate con nosotros</h2>
+
+        <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+            <!-- Campos a rellenar-->
+
+            <h4>Ingresá los siguientes datos</h4>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required> <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required> <br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" required> <br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" required> <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="number" name="telefono" required> <br>
+
+            <h4>Seleccioná tu género</h4>
+            <select name="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                <option value="X">Sin Especificar</option>
+            </select>
+
+            <h4>Informanos tu consulta</h4>
+            <textarea name="consulta" cols="30" rows="10" placeholder="Contanos acá con detalle lo que necesites"></textarea>
+
+            <h4>Seleccioná las opciones que apliquen debajo</h4>
+            <label for="newsletter">Suscribirme al newsletter</label>
+            <input type="checkbox" name="newsletter" value="1"> <br>
+            <label for="Promociones">Informarme de promociones</label>
+            <input type="checkbox" name="promociones" value="1"> <br> <br>
+
+            <!-- Botones -->
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Resetear formulario">
+        </form>
     </main>
 
     <hr>
