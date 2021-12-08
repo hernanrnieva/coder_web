@@ -183,13 +183,13 @@ main{
 }
 
 .footer{
+    height: 50px;
     border-radius: 40px;
     margin-right: 2.5%;
     margin-left: 2.5%;
     margin-bottom: 2.5%;
-    padding: 7px;
+    padding: 10px;
     background-color: #c7d1c8;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,13 +198,35 @@ main{
 }
 
 .footer__socials{
+    display: inline-block;
     width: 40%;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-right: 2.5%;
+    padding-right: 1%;
     padding-left: 2.5%;
     border-right: 4px solid #5c371d;
+}
+
+.footer__reach{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-right: 4px solid #5c371d;
+}
+
+.footer__up{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 1%;
 }
 
 .footer__title{
@@ -214,56 +236,32 @@ main{
     color: #5c371d;
 }
 
-.footer__title--socials{
-    width: 20%;
+.footer__title--long{
+    width: 85%;
 }
 
-.footer__title--reach{
-    width: 90%;
-    text-align: left;
+.footer__link{
+    height: 100%;
+    display: inline-block;
+    width: 15%;
 }
 
 .footer__socials__list{
     list-style: none;
     width: 80%;
+    height: 100%;
     display: flex;
     justify-content: right;
-    align-items: right;
+    align-items: center;
 }
 
 .footer__socials__list__item{
     display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 10%;
-}
-
-.footer__socials__list__item__img{
-    width: 60px;
-    height: auto;
-}
-
-.footer__reach{
-    width: 30%;
     height: 100%;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
-    display: flex;
 }
 
-.footer__up{
-    width: 30%;
-    height: 100%;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
-    display: flex;
-
-}
-
-.footer__link{
+.footer__img{
     display: inline-block;
+    height: 100%;
     width: auto;
-    font-size: 25px;
-    margin-right: 15px;
-    padding: 5px;
 }
