@@ -31,7 +31,7 @@ Light purple: #898293
 
 /* * * * * * * * * Gral * * * * * * * * */
 
-.body{
+body{
     background-image: url("../assets/imgs/background.jpg");
     background-size: 300px auto;
     background-attachment: fixed;

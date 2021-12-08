@@ -7,24 +7,24 @@
     <title>The Horn Tea House - Us</title>
 </head>
 <body>
-    <header>
-        <h1>Us</h1>
-    
-        <hr>
+    <header class="header">
+        <img class="header__img" src="../assets/imgs/logo.jpg" alt="The Horn Tea Logo">
+        
+        <h1 class="header__title">Us</h1>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Us</a></li>
-                <li><a href="./place.html">Place</a></li>
-                <li><a href="./products.html">Products</a>
-                    <ul>
-                        <li><a href="./products.html#black_tea">Black Tea</a></li>
-                        <li><a href="./products.html#chill_blend">Chill Blend</a></li>
-                        <li><a href="./products.html#earl_grey">Earl Grey</a></li>
+        <nav class="header__menu">
+            <ul class="menu__list">
+                <li class="menu__list__item"><a class="menu__list__item__link" href="../index.html">Home</a></li>
+                <li class="menu__list__item"><a class="menu__list__item__link"  href="#">Us</a></li>
+                <li class="menu__list__item"><a class="menu__list__item__link"  href="./place.html">Place</a></li>
+                <li class="menu__list__item"><a class="menu__list__item__link"  href="./products.html">Products</a>
+                    <ul class="menu__list__item__sublist">
+                        <li class="menu__list__item__sublist__item"><a  class="menu__list__item__sublist__item__link" href="./products.html#black_tea">Black Tea</a></li>
+                        <li class="menu__list__item__sublist__item"><a  class="menu__list__item__sublist__item__link" href="./products.html#chill_blend">Chill Blend</a></li>
+                        <li class="menu__list__item__sublist__item"><a  class="menu__list__item__sublist__item__link" href="./products.html#earl_grey">Earl Grey</a></li>
                     </ul>
                 </li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li class="menu__list__item"><a class="menu__list__item__link" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -34,17 +34,26 @@
     <main>
         <h2>Meet the people who participate in this project</h2>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, vel? Vitae facere voluptas porro sapiente nisi in possimus provident voluptate, explicabo officia, sed ullam? Quos ducimus at enim cumque. Rem?.</p>
+        <p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, vel? Vitae facere voluptas porro sapiente nisi in possimus provident voluptate, explicabo officia, sed ullam? Quos ducimus at enim cumque. Rem?.</p>
     </main>
 
-    <footer>
-        <h2>Socials</h2>
+    <hr>
 
-        <ul style="list-style-type: none;">
-            <li><img src="../assets/imgs/i_whatsapp.png" alt="Whatsapp Contact The Horn Tea" width="150px" height="150px"></li>
-            <li><img src="../assets/imgs/i_twitter.png" alt="Twitter Contact The Horn Tea" width="150px" height="150px"></li>
-            <li><img src="../assets/imgs/i_instagram.png" alt="Instagram Contact The Horn Tea" width="150px" height="150px"></li>
-        </ul>
+    <footer class="footer">
+        <section class="footer__socials">
+            <h2 class="footer__title footer__title--socials">Socials:</h2>
+
+            <ul class="footer__socials__list" style="list-style-type: none;">
+                <li class="footer__socials__list__item"><img class="footer__socials__list__item__img" src="../assets/imgs/i_whatsapp.png" alt="Whatsapp Contact The Horn Tea"></li>
+                <li class="footer__socials__list__item"><img class="footer__socials__list__item__img" src="../assets/imgs/i_twitter.png" alt="Twitter Contact The Horn Tea"></li>
+                <li class="footer__socials__list__item"><img class="footer__socials__list__item__img" src="../assets/imgs/i_instagram.png" alt="Instagram Contact The Horn Tea"></li>
+            </ul>
+        </section>
+
+        <section class="footer__reach">
+            <h2 class="footer__title footer__title--reach">Reach out:</h2>
+            <a class="footer__link" href="./contact.html">Contact</a>
+        </section>
     </footer>
 </body>
 </html>
