@@ -135,16 +135,26 @@ main{
     box-shadow: inset;
 }
 
-.main__introduction{
-    width: 50%;
+.main__div{
     display: inline-block;
     padding: 20px;
+}
+
+.main__div--half{
+    width: 50%
+}
+
+.main__img{
+    width: 90%;
+    height: auto;
+    border: 2px solid #5c371d;
 }
 
 .main__title{
     color: #c7d1c8;
     font-family: 'Masqualero-Regular', serif;
     font-size: 25pt;
+    margin-bottom: 20px;
 }
 
 .main__title--subtitle{
@@ -159,28 +169,29 @@ main{
     color: black;
     font-family: 'Masqualero-Italic', serif;
     font-size: 16pt;
-    margin-top: 20px;
 }
 
 .main__hr{
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 15px;
     border-width: 0px;
     height: 4px;
     background-color: #c7d1c8;
 }
 
-.main__video{
-    width: 50%;
-    display: inline-block;
-    padding: 20px;
+.main__hr--hidden{
+    background-color: transparent;
 }
 
-.main__video__frame{
-    margin-top: 20px;
+.main__frame{
     width: 90%;
     height: 340px;
+    border: 2px solid #5c371d;
 }
+
+/* * * * * * * * * * * * */
+
+/* * * * * * Footer * * * * * * */
 
 .footer{
     height: 50px;
