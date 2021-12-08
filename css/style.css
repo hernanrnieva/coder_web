@@ -42,11 +42,12 @@ body{
 /* * * * * * * * * Header * * * * * * * * */
 
 .header{
+    height: 50px;
     border-radius: 40px;
     margin-top: 2.5%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    padding: 15px;
+    padding: 10px;
     background-color: #c7d1c8;
     display: flex;
     justify-content: center;
@@ -58,25 +59,26 @@ body{
 .header__img{
     display: inline-block;
     width: 5%;
+    margin-left: 20px;
     height: auto;
 }
 
 .header__title{
     display: inline-block;
     width: 20%;
-    margin-left: 30px;
+    margin-left: 20px;
     color: #5c371d;
     font-family: 'Masqualero-Bold', serif;
     font-size: 30pt;
 }
 
+/* Menu */
 .header__menu{
     display: inline-block;
-    width: 70%;
+    width: 75%;
 }
 
 .menu__list{
-    list-style: none;
     font-size: 0;
 }
 
@@ -84,9 +86,10 @@ body{
     display: inline-block;
     width: 20%;
     font-size: 20pt;
-    text-align: right;
+    text-align: center;
 }
 
+/* Submenu */
 .menu__list__item__sublist{
     position: absolute;
     display: none;
