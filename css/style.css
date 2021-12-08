@@ -195,7 +195,7 @@ main{
 }
 
 .footer__socials{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,11 +241,20 @@ main{
 }
 
 .footer__reach{
-    width: 50%;
+    width: 30%;
     height: 100%;
     padding-right: 2.5%;
     padding-left: 2.5%;
     display: flex;
+}
+
+.footer__up{
+    width: 30%;
+    height: 100%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    display: flex;
+
 }
 
 .footer__link{
@@ -254,5 +263,4 @@ main{
     font-size: 25px;
     margin-right: 15px;
     padding: 5px;
-    border: 1px dashed #5c371d;
 }
