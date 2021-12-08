@@ -147,6 +147,7 @@ hr{
     width: 100%;
 }
 
+/*
 .main__div--rightBorder{
     border-right: 4px solid #c7d1c8;
 }
@@ -154,6 +155,7 @@ hr{
 .main__div--leftBorder{
     border-left: 4px solid #c7d1c8;
 }
+*/
 
 .main__div--half{
     width: 50%
