@@ -33,12 +33,12 @@
     <hr class="hr">
 
     <main>
-        <h2>Get in touch with us</h2>
+        <h2 class="main__title">Get in touch with us</h2>
 
         <form action="send.php" method="post" enctype="application/x-www-form-urlencoded">
             <!-- Fields to fill in-->
 
-            <h4>Fill in the details below</h4>
+            <h4 class="main__title main__title--minititle">Fill in the details below</h4>
             <label for="name">Name:</label>
             <input type="text" name="name" required> <br>
             <label for="email">Email:</label>
@@ -50,17 +50,17 @@
             <label for="telephone">Telephone:</label>
             <input type="number" name="telephone" required> <br>
 
-            <h4>Select your gender</h4>
+            <h4 class="main__title main__title--minititle">Select your gender</h4>
             <select name="Gender">
                 <option value="M">Masculine</option>
                 <option value="F">Femenine</option>
                 <option value="X">Unspecified</o>
             </select>
 
-            <h4>Tell us about your inquiry</h4>
+            <h4 class="main__title main__title--minititle">Tell us about your inquiry</h4>
             <textarea name="inquiry" cols="30" rows="10" placeholder="Detail everything here"></textarea>
 
-            <h4>Select every option that applies</h4>
+            <h4 class="main__title main__title--minititle">Select every option that applies</h4>
             <label for="newsletter">Suscribe to newsletter</label>
             <input type="checkbox" name="newsletter" value="1"> <br>
             <label for="offers">Inform me about any available offers</label>

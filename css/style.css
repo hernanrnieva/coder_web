@@ -141,13 +141,21 @@ main{
 .main__title{
     color: #c7d1c8;
     font-family: 'Masqualero-Regular', serif;
+    font-size: 25pt;
+}
+
+.main__title--subtitle{
     font-size: 20pt;
+}
+
+.main__title--minititle{
+    font-size: 16pt;
 }
 
 .main__text{
     color: black;
     font-family: 'Masqualero-Italic', serif;
-    font-size: 15pt;
+    font-size: 16pt;
     margin-top: 20px;
 }
 
