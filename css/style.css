@@ -178,6 +178,7 @@ hr{
 .main__img--small{
     width: 40%;
     height: auto;
+    margin-bottom: 25px;
 }
 
 .main__title{
@@ -195,6 +196,9 @@ hr{
     color: black;
     font-family: 'Masqualero-Italic', serif;
     font-size: 16pt;
+    background-color: #c7d1c8;
+    padding: 25px;
+    border-radius: 20px;
 }
 
 .main__hr{
