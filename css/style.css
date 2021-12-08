@@ -143,6 +143,10 @@ hr{
     padding: 20px;
 }
 
+.main__div--full{
+    width: 100%;
+}
+
 .main__div--rightBorder{
     border-right: 4px solid #c7d1c8;
 }
@@ -183,10 +187,6 @@ hr{
 
 .main__title--subtitle{
     font-size: 20pt;
-}
-
-.main__title--minititle{
-    font-size: 16pt;
 }
 
 .main__text{
@@ -241,6 +241,16 @@ hr{
 
 .main__tr:hover, .main__thead:hover{
     background-color: #c7d1c8;
+}
+
+.main__form__label, .main__form__input, .main__form__textarea, .main__form__option, .main__form__select{
+    font-size: 16pt;
+    color: black;
+    font-family: 'Masqualero-Regular', serif;
+}
+
+.main__form__input{
+    padding: 5px;
 }
 
 /* * * * * * * * * * * * */
