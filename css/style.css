@@ -216,6 +216,7 @@ hr{
 .main__frame{
     width: 90%;
     height: 340px;
+    padding: 2px;
     border: 2px solid #5c371d;
 }
 
@@ -249,6 +250,9 @@ hr{
     background-color: #c7d1c8;
 }
 
+a{
+    text-decoration: none;
+}
 
 .main__form__label, .main__form__input, .main__form__textarea, .main__form__option, .main__form__select{
     font-size: 16pt;
