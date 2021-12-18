@@ -54,15 +54,12 @@
                         <label class="main__form__label" for="telephone">Telephone:</label>
                         <input class="main__form__input" type="number" name="telephone" required> <br>
 
-                        <hr class="main__hr main__hr--hidden">
-
                         <h3 class="main__title main__title--subtitle">Select your gender</h3>
                         <select class="main__form__select" name="Gender">
                             <option class="main__form__option" value="M">Masculine</option>
                             <option class="main__form__option" value="F">Femenine</option>
                             <option class="main__form__option" value="X">Unspecified</o>
                         </select>
-                        <hr class="main__hr main__hr--hidden">
                     </section>
 
                     <section class="main__form__section">
@@ -71,15 +68,17 @@
                         <hr class="main__hr main__hr--hidden">
 
                         <h3 class="main__title main__title--subtitle">Select every option that applies</h3>
-                        <label class="main__form__label" for="newsletter">Suscribe to newsletter</label>
-                        <input class="main__form__input" type="checkbox" name="newsletter" value="1"> <br>
-                        <label class="main__form__label" for="offers">Inform me about any available offers</label>
-                        <input class="main__form__input" type="checkbox" name="offers" value="1"> <br> <br>
-                        <hr class="main__hr main__hr--hidden">
+                        <section class="main__form__section__section">
+                            <label class="main__form__label" for="newsletter">Suscribe to newsletter</label>
+                            <input class="main__form__input main__form__input--checkbox" type="checkbox" name="newsletter" value="1"> <br>
+                            <label class="main__form__label" for="offers">Inform me about any available offers</label>
+                            <input class="main__form__input main__form__input--checkbox" type="checkbox" name="offers" value="1"> <br> <br>
+                        </section>
                     </section>
                 </div>
                 
                 <div class="main__form__div">
+                    <hr class="main__hr main__hr--hidden">
                     <input class="main__form__input main__form__input--button" type="submit" value="Submit"> 
                     <input class="main__form__input main__form__input--button" type="reset" value="Reset">
                 </div>
