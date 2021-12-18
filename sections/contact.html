@@ -37,42 +37,53 @@
     <main class="main main--centered">
         <div class="main__div main__div--full">
             <h2 class="main__title">Get in touch with us</h2>
+            <hr class="main__hr main__hr--hidden">
             <form class="main__form" action="send.php" method="post" enctype="application/x-www-form-urlencoded">
                 <!-- Fields to fill in-->
-                <h3 class="main__title main__title--subtitle">Fill in the details below</h3>
-                <label class="main__form__label" for="name">Name:</label>
-                <input class="main__form__input" type="text" name="name" required> <br>
-                <label class="main__form__label" for="email">Email:</label>
-                <input class="main__form__input" type="email" name="email" required> <br>
-                <label class="main__form__label" for="age">Age:</label>
-                <input class="main__form__input" type="number" name="age" required> <br>
-                <label class="main__form__label" for="date">Date:</label>
-                <input class="main__form__input" type="date" name="date" required> <br>
-                <label class="main__form__label" for="telephone">Telephone:</label>
-                <input class="main__form__input" type="number" name="telephone" required> <br>
-                <hr class="main__hr main__hr--hidden">
+                <div class="main__form__div main__form__div--row">
+                    <section class="main__form__section">
+                        <h3 class="main__title main__title--subtitle">Fill in the details below</h3>
+                        <label class="main__form__label" for="name">Name:</label>
+                        <input class="main__form__input" type="text" name="name" required> <br>
+                        <label class="main__form__label" for="email">Email:</label>
+                        <input class="main__form__input" type="email" name="email" required> <br>
+                        <label class="main__form__label" for="age">Age:</label>
+                        <input class="main__form__input" type="number" name="age" required> <br>
+                        <label class="main__form__label" for="date">Date:</label>
+                        <input class="main__form__input" type="date" name="date" required> <br>
+                        <label class="main__form__label" for="telephone">Telephone:</label>
+                        <input class="main__form__input" type="number" name="telephone" required> <br>
 
-                <h3 class="main__title main__title--subtitle">Select your gender</h3>
-                <select class="main__form__select" name="Gender">
-                    <option class="main__form__option" value="M">Masculine</option>
-                    <option class="main__form__option" value="F">Femenine</option>
-                    <option class="main__form__option" value="X">Unspecified</o>
-                </select>
-                <hr class="main__hr main__hr--hidden">
+                        <hr class="main__hr main__hr--hidden">
 
-                <h3 class="main__title main__title--subtitle">Tell us about your inquiry</h3>
-                <textarea class="main__form__textarea" name="inquiry" cols="30" rows="10" placeholder="Detail everything here"></textarea>
-                <hr class="main__hr main__hr--hidden">
+                        <h3 class="main__title main__title--subtitle">Select your gender</h3>
+                        <select class="main__form__select" name="Gender">
+                            <option class="main__form__option" value="M">Masculine</option>
+                            <option class="main__form__option" value="F">Femenine</option>
+                            <option class="main__form__option" value="X">Unspecified</o>
+                        </select>
+                        <hr class="main__hr main__hr--hidden">
+                    </section>
 
-                <h3 class="main__title main__title--subtitle">Select every option that applies</h3>
-                <label class="main__form__label" for="newsletter">Suscribe to newsletter</label>
-                <input class="main__form__input" type="checkbox" name="newsletter" value="1"> <br>
-                <label class="main__form__label" for="offers">Inform me about any available offers</label>
-                <input class="main__form__input" type="checkbox" name="offers" value="1"> <br> <br>
+                    <section class="main__form__section">
+                        <h3 class="main__title main__title--subtitle">Tell us about your inquiry</h3>
+                        <textarea class="main__form__textarea" name="inquiry" placeholder="Detail everything here"></textarea>
+                        <hr class="main__hr main__hr--hidden">
 
+                        <h3 class="main__title main__title--subtitle">Select every option that applies</h3>
+                        <label class="main__form__label" for="newsletter">Suscribe to newsletter</label>
+                        <input class="main__form__input" type="checkbox" name="newsletter" value="1"> <br>
+                        <label class="main__form__label" for="offers">Inform me about any available offers</label>
+                        <input class="main__form__input" type="checkbox" name="offers" value="1"> <br> <br>
+                        <hr class="main__hr main__hr--hidden">
+                    </section>
+                </div>
+                
+                <div class="main__form__div">
+                    <input class="main__form__input main__form__input--button" type="submit" value="Submit"> 
+                    <input class="main__form__input main__form__input--button" type="reset" value="Reset">
+                </div>
                <!-- Buttons -->
-               <input class="main__form__input" type="submit" value="Submit"> 
-               <input class="main__form__input" type="reset" value="Reset">
             </form>
         </div>
     </main>
