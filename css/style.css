@@ -112,6 +112,10 @@ body{
     color:#5c371d;
 }
 
+.menu__list__item__link:hover, .menu__list__item__sublist__item__link:hover{
+    color: #898293;
+}
+
 /* * * * * * * * * * * * * * * * * */
 
 hr{
