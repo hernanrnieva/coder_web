@@ -1,22 +1,3 @@
-/* Reset */
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-/* Colors:
-
-Dark green: #5b6d5f
-Light green: #c7d1c8
-Brown: #5c371d
-Light purple: #898293
-
-*/
-
 /* Fonts */
 @font-face{
     font-family: 'Masqualero-Regular';
@@ -42,6 +23,25 @@ body{
 }
 
 /* * * * * * * * * * * * * * * * * */
+
+/* Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Colors:
+
+Dark green: #5b6d5f
+Light green: #c7d1c8
+Brown: #5c371d
+Light purple: #898293
+
+*/
 
 /* * * * * * * * * Header * * * * * * * * */
 
