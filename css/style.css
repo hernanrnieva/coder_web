@@ -389,6 +389,7 @@ a{
 .footer__contact{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     height: 30px;
     padding-right: 2.5%;
     padding-left: 2.5%;
@@ -398,6 +399,7 @@ a{
 .footer__up{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     height: 30px;
     padding-right: 2.5%;
     padding-left: 2.5%;
