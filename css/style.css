@@ -377,11 +377,9 @@ a{
 
 .footer__socials{
     display: flex;
+    justify-content: space-evenly;
     max-width: 400px;
-    flex-grow: 1;
     height: 30px;
-    align-items: center;
-    justify-content: space-around;
     padding-right: 2.5%;
     padding-left: 2.5%;
     margin: 10px;
@@ -389,23 +387,17 @@ a{
 
 .footer__contact{
     display: flex;
-    max-width: 200px;
-    flex-grow: 1;
+    justify-content: space-evenly;
     height: 30px;
-    align-items: center;
-    justify-content: space-around;
     padding-right: 2.5%;
     padding-left: 2.5%;
     margin: 10px;
 }
 
 .footer__up{
-    flex-grow: 1;
-    max-width: 200px;
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
     height: 30px;
-    justify-content: space-around;
     padding-right: 2.5%;
     padding-left: 2.5%;
     margin: 10px;
@@ -417,10 +409,6 @@ a{
     font-family: 'Masqualero-Bold', serif;
     color: #5c371d;
     margin-right: 10px;
-}
-
-.footer__title--long{
-    width: 85%;
 }
 
 .footer__link{
