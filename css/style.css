@@ -235,7 +235,7 @@ hr{
     padding: 25px;
     border-radius: 20px;
     margin-top: 20px;
-
+    text-align: center;
 }
 
 .main__hr{
@@ -458,12 +458,26 @@ a{
     height: 100%;
 }
 
-@media screen and (min-width: 480px) and (max-width:1024px){
+@media screen and (min-width: 480px){
     .header{
         grid-template-areas: 
         "logo title"
         "menu menu";
         justify-content: center;
+    }
+
+    .main__img--thirdMid{
+        width: 100%;
+    }
+
+    .main__div--merchandising{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -472,11 +486,29 @@ a{
         width: 450px;
         height: 250px;
     }
+
+    .main__div--products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__div--noReduceSmall{
+        grid-column: 1/-1;
+    }
+
+    .main__img--thirdMidSmall{
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 768px){
     .main--halfMed{
         grid-template-columns: 1fr 1fr;
+        justify-content: stretch;
+    }
+
+    .main--twoThirdsMed{
+        grid-template-columns: 4fr 3fr;
         justify-content: stretch;
     }
 
@@ -487,6 +519,16 @@ a{
     .main__frame{
         width: 570px;
         height: 316px;
+    }
+
+    .main__div--merchandising{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .main__div--products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -513,5 +555,61 @@ a{
 
     .main__div--reduceHigh{
         grid-column: auto;
+    }
+    
+    .main--noReduceHigh{
+        grid-template-columns: 1fr;
+    }
+    
+    .main__div--merchandising{
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "hat box apron apron"
+        "bags bags apron apron"
+        "shirt shirt cup cup0"
+        "shirt shirt van van";
+        justify-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .main__img--product{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main__img--hat{
+        grid-area: hat;
+    }
+
+    .main__img--apron{
+        grid-area: apron;
+    }
+
+    .main__img--bags{
+        grid-area: bags;
+    }
+
+    .main__img--box{
+        grid-area: box;
+    }
+
+    .main__img--cup{
+        grid-area: cup;
+    }
+
+    .main__img--cup0{
+        grid-area: cup0;
+    }
+
+    .main__img--shirt{
+        grid-area: shirt;
+    }
+
+    .main__img--van{
+        grid-area: van;
     }
 }
