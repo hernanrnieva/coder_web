@@ -174,6 +174,10 @@ hr{
     padding: 20px;
 }
 
+main__div--noPadding{
+    padding: 0px;
+}
+
 .main__div--full{
     width: 100%;
 }
@@ -208,8 +212,6 @@ hr{
 }
 
 .main__img--small{
-    width: 100%;
-    height: auto;
     margin-bottom: 25px;
 }
 
@@ -272,13 +274,13 @@ hr{
     font-size: 12pt;
     text-align: center;
     border: 3px solid #5c371d;
-    padding: 5px;
+    padding: 1px;
     color: black;
     font-family: 'Masqualero-Italic', serif;
 }
 
 .main__th{
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .main__td--special{
@@ -478,6 +480,10 @@ a{
         align-content: center;
         justify-items: center;
         align-items: center;
+    }
+
+    .main__th, .main__td{
+        padding: 5px;
     }
 }
 
