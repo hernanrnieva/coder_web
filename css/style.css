@@ -57,7 +57,10 @@ Light purple: #898293
     padding: 10px;
     background-color: #c7d1c8;
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "logo"
+    "title"
+    "menu";
     justify-items: center;
     align-items: center;
     justify-content: stretch;
@@ -70,6 +73,7 @@ Light purple: #898293
     display: inline-block;
     width: 50px;
     height: auto;
+    grid-area: logo;
 }
 
 .header__title{
@@ -81,6 +85,7 @@ Light purple: #898293
     color: #5c371d;
     font-family: 'Masqualero-Bold', serif;
     font-size: 30pt;
+    grid-area: title;
 }
 
 /* Menu */
@@ -88,6 +93,7 @@ Light purple: #898293
 .header__menu{
     padding: 10px;
     min-width: 100px;
+    grid-area: menu;
 }
 
 .menu__list{
@@ -106,7 +112,6 @@ Light purple: #898293
     margin-bottom: 0px; 
     width: auto;
     font-size: 20pt;
-    text-align: center;
 }
 
 /* Submenu */
@@ -450,4 +455,21 @@ a{
 .footer__img{
     display: inline-block;
     height: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width:1024px){
+    .header{
+        grid-template-areas: 
+        "logo title"
+        "menu menu";
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header{
+        grid-template-areas: 
+        "logo title menu";
+        justify-content: space-evenly;
+    }
 }
