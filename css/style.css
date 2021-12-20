@@ -204,7 +204,7 @@ hr{
 }
 
 .main__img--small{
-    width: 40%;
+    width: 100%;
     height: auto;
     margin-bottom: 25px;
 }
@@ -256,11 +256,12 @@ hr{
     text-align: center;
     width: 100%;
     padding: 10px;
+    margin-top: 20px
 }
 
 .main__th, .main__td{
     vertical-align: center;
-    font-size: 16pt;
+    font-size: 12pt;
     text-align: center;
     border: 3px solid #5c371d;
     padding: 5px;
@@ -268,12 +269,12 @@ hr{
     font-family: 'Masqualero-Italic', serif;
 }
 
-.main__td--special{
-    color: #5c371d;
+.main__th{
+    font-size: 14pt;
 }
 
-.main__th{
-    font-size: 18pt;
+.main__td--special{
+    color: #5c371d;
 }
 
 .main__tr:hover, .main__thead:hover{
