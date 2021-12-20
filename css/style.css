@@ -541,6 +541,16 @@ a{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .main__form{
+        display: grid;
+        grid-template-areas:
+        "gral inquiry"
+        "gender extra"
+        "submit submit";
+        grid-gap: 20px;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 1024px){
