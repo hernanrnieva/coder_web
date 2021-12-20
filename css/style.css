@@ -521,6 +521,11 @@ a{
         height: 316px;
     }
 
+    .main__frame--map{
+        width: 280px;
+        height: 400px;
+    }
+
     .main__div--merchandising{
         display: grid;
         grid-template-columns: 1fr;
@@ -549,7 +554,7 @@ a{
     }
     
     .main__frame--map{
-        width: 360px;
+        width: 380px;
         height: 400px;
     }
 
