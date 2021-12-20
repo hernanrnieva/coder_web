@@ -252,7 +252,7 @@ hr{
 
 .main__frame{
     width: 100%;
-    height: 200px;
+    height: 100%;
     padding: 2px;
     border: 2px solid #5c371d;
     margin-top: 20px;
@@ -466,10 +466,38 @@ a{
     }
 }
 
+@media screen and (min-width: 570px){
+    .main__frame{
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main--home{
+        grid-template-columns: 1fr 1fr;
+        justify-content: stretch;
+    }
+
+    .main__div--noreduce{
+        grid-column: 1/3;
+    }
+
+    .main__frame{
+        width: 570px;
+        height: 316px;
+    }
+}
+
 @media screen and (min-width: 1024px){
     .header{
         grid-template-areas: 
         "logo title menu";
         justify-content: space-evenly;
+    }
+
+    .main__frame{
+        width: 850px;
+        height: 472px;
     }
 }
