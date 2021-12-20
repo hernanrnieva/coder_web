@@ -200,6 +200,7 @@ hr{
     width: 100%;
     height: auto;
     border: 2px solid #5c371d;
+    margin-top: 20px;
 }
 
 .main__img--small{
@@ -212,7 +213,6 @@ hr{
     color: #c7d1c8;
     font-family: 'Masqualero-Regular', serif;
     font-size: 25pt;
-    margin-bottom: 20px;
 }
 
 .main__title--subtitle{
@@ -226,6 +226,8 @@ hr{
     background-color: #c7d1c8;
     padding: 25px;
     border-radius: 20px;
+    margin-top: 20px;
+
 }
 
 .main__hr{
@@ -245,6 +247,7 @@ hr{
     height: 200px;
     padding: 2px;
     border: 2px solid #5c371d;
+    margin-top: 20px;
 }
 
 .main__table{
