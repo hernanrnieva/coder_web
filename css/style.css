@@ -47,7 +47,7 @@ Light purple: #898293
 /* * * * * * * * * Header * * * * * * * * */
 
 .header{
-    height: 50px;
+    height: auto;
     border-radius: 40px;
     margin-top: 2.5%;
     margin-left: 2.5%;
@@ -55,7 +55,8 @@ Light purple: #898293
     padding: 10px;
     background-color: #c7d1c8;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     box-shadow: 10px 10px 10px 1px black;
     box-shadow: inset;
@@ -63,32 +64,41 @@ Light purple: #898293
 
 .header__img{
     display: inline-block;
-    height: 100%;
-    width: auto;
+    width: 50px;
+    height: auto;
 }
 
 .header__title{
     display: inline-block;
-    width: 20%;
+    text-align: center;
+    margin-left: 10px;
+    width: 250px;
+    flex-basis: auto;
     color: #5c371d;
     font-family: 'Masqualero-Bold', serif;
     font-size: 30pt;
 }
 
 /* Menu */
+
 .header__menu{
-    display: inline-block;
-    width: 65%;
+    padding: 10px;
 }
 
 .menu__list{
     font-size: 0;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .menu__list__item{
     display: inline-block;
+    margin: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px; 
     width: auto;
     font-size: 20pt;
     text-align: center;
