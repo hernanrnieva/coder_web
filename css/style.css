@@ -152,7 +152,6 @@ hr{
     padding: 15px;
     background-color: #898293;
     display: grid;
-    grid-template-rows: auto auto auto;
     justify-items: center;
     align-items: center;
     justify-content: center;
@@ -213,6 +212,10 @@ hr{
     color: #c7d1c8;
     font-family: 'Masqualero-Regular', serif;
     font-size: 25pt;
+}
+
+.main__title--contact{
+    margin-bottom: 30px;
 }
 
 .main__title--subtitle{
@@ -285,46 +288,52 @@ a{
     text-decoration: none;
 }
 
-.main__form__div{
-    width: 100%;
+.main__form{
+    display: grid;
+    grid-template-areas:
+    "gral"
+    "gender"
+    "inquiry"
+    "extra"
+    "submit";
+    grid-gap: 20px;
 }
 
-.main__form__div--row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+.main__form__gral{
+    grid-area: gral;
 }
 
-.main__form__section{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: center;
+.main__form__gender{
+    grid-area: gender;
 }
 
-.main__form__section__section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.main__form__inquiry{
+    grid-area: inquiry;
+}
+
+.main__form__extra{
+    grid-area: extra;
+}
+
+.main__form__submit{
+    grid-area: submit;
 }
 
 .main__form__label{
-    font-size: 16pt;
+    font-size: 15pt;
     color: black;
     font-family: 'Masqualero-Regular', serif;
     margin: 3px;
+    margin-top: 10px
 }
 
 .main__form__textarea{
     width: 80%;
-    height: 80%;
+    height: 200px;
 }
 
 .main__form__input, .main__form__textarea, .main__form__option, .main__form__select{
-    font-size: 16pt;
+    font-size: 15pt;
     color: black;
     font-family: 'Masqualero-Regular', serif;
     margin: 3px;
@@ -339,12 +348,12 @@ a{
 }
 
 .main__form__input--button{
-    width: 20%;
+    width: 40%;
 }
 
 .main__form__input--checkbox{
-    height: 20px;
-    width: auto;
+    height: 18px;
+    width: 18px;
 }
 
 /* * * * * * * * * * * * */
