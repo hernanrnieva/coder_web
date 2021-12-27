@@ -225,6 +225,21 @@ hr{
     font-size: 25pt;
 }
 
+.main__img:hover, .main__title:hover{
+    animation-duration: 2s;
+    animation-name: bounce;
+    animation-iteration-count: 1;
+}
+
+@keyframes bounce{
+    20%{
+        transform: scale(1.02, 1.02);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
 .main__title--contact{
     margin-bottom: 30px;
 }
@@ -242,6 +257,11 @@ hr{
     border-radius: 20px;
     margin-top: 20px;
     text-align: center;
+    transition: all 1s;
+}
+
+.main__text:hover{
+    font-size: 17pt;
 }
 
 .main__hr{
