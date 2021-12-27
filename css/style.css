@@ -41,8 +41,10 @@ html{
 
 Dark green: #5b6d5f
 Light green: #c7d1c8
+Light green obscured: #b0beb2
 Brown: #5c371d
 Light purple: #898293
+Light purple obscured: #6d6676
 
 */
 
@@ -55,7 +57,7 @@ Light purple: #898293
     margin-left: 15px;
     margin-right: 15px;
     padding: 10px;
-    background-color: #c7d1c8;
+    background-image: linear-gradient(to bottom, #c7d1c8, #9aac9c);
     display: grid;
     grid-template-areas: 
     "logo"
@@ -118,7 +120,7 @@ Light purple: #898293
 .menu__list__item__sublist{
     position: absolute;
     display: none;
-    background-color: #c7d1c8;
+    background-image: linear-gradient(to bottom, #c7d1c8, #9aac9c);
 }
 
 .menu__list__item__sublist__item{
@@ -155,7 +157,7 @@ hr{
     margin: 15px;
     text-align: center;
     padding: 15px;
-    background-color: #898293;
+    background-image: linear-gradient(to bottom, #898293, #524d59);
     display: grid;
     justify-items: center;
     align-items: center;
@@ -223,7 +225,7 @@ hr{
     color: #5c371d;
     font-family: 'Masqualero-Italic', serif;
     font-size: 16pt;
-    background-color: #c7d1c8;
+    background-image: linear-gradient(to bottom, #c7d1c8, #9aac9c);
     padding: 25px;
     border-radius: 20px;
     margin-top: 20px;
@@ -278,7 +280,7 @@ hr{
 }
 
 .main__tr:hover, .main__thead:hover{
-    background-color: #c7d1c8;
+    background-image: linear-gradient(to bottom, #c7d1c8, #9aac9c);
 }
 
 a{
@@ -363,7 +365,7 @@ a{
     margin-right: 5px;
     margin-left: 15px;
     margin-bottom: 15px;
-    background-color: #c7d1c8;
+    background-image: linear-gradient(to bottom, #c7d1c8, #9aac9c);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
