@@ -1,0 +1,47 @@
+.body{
+    background-image: url("../assets/imgs/background.jpg");
+    background-size: 300px auto;
+    background-attachment: fixed;
+    margin-right: 0px !important;
+    padding: 15px;
+    padding-top: 85px;
+}
+
+.footer{
+    margin-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.footer__img{
+    width: 35px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.bg-lightgreen{
+    background-color: #c7d1c8;
+}
+
+.bg-lightpurple{
+    background-color: #898293;
+}
+
+.navbar-nav{
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar--nopadding{
+    padding: 0px;
+}
+
+.navbar__title{
+    margin-top: 7px;
+}
+
+.rounded{
+    border-radius: 40px !important;
+}
