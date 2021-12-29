@@ -41,3 +41,25 @@
 .rounded{
     border-radius: 20px !important;
 }
+
+.main__frame{
+    height: 350px;
+}
+
+@media screen and (min-width: 685px){
+    .main__frame{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .main__frame{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main__frame{
+        height: 400px;
+    }
+}
