@@ -2,21 +2,17 @@
     background-image: url("../assets/imgs/background.jpg");
     background-size: 300px auto;
     background-attachment: fixed;
-    margin-right: 0px !important;
-    padding: 15px;
-    padding-top: 85px;
+    padding-top: 100px;
 }
 
 .footer{
-    margin-top: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-top: 30px;
 }
 
 .footer__img{
     width: 35px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .bg-lightgreen{
@@ -43,5 +39,5 @@
 }
 
 .rounded{
-    border-radius: 40px !important;
+    border-radius: 20px !important;
 }
