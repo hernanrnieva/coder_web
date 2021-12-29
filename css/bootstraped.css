@@ -1,8 +1,46 @@
+/* Fonts */
+@font-face{
+    font-family: 'Masqualero-Regular';
+    src: url("../assets/fonts/Masqualero-Regular.otf");
+}
+
+@font-face{
+    font-family: 'Masqualero-Bold';
+    src: url("../assets/fonts/Masqualero-Bold.otf");
+}
+
+@font-face{
+    font-family: 'Masqualero-Italic';
+    src: url("../assets/fonts/Masqualero-Italic.otf");
+}
+
 .body{
     background-image: url("../assets/imgs/background.jpg");
     background-size: 300px auto;
     background-attachment: fixed;
     padding-top: 100px;
+}
+
+.text-primary, .text-dark, .text-muted{
+    font-family: 'Masqualero-Bold', serif !important;
+}
+
+.text-secondary, .text-muted{
+
+    font-family: 'Masqualero-Italic', serif !important;
+}
+
+.text-primary{
+    color: #c7d1c8 !important;
+}
+
+.text-secondary{
+    color: #5c371d !important;
+    font-size: 16pt;
+}
+
+.text-dark{
+    color: black;
 }
 
 .footer{
