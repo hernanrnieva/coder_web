@@ -87,6 +87,10 @@
     height: 350px;
 }
 
+.nopadding{
+    padding: 0px !important;
+}
+
 @media screen and (min-width: 685px){
     .main__frame{
         height: 450px;
