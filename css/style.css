@@ -31,19 +31,22 @@
 
 .text-primary{
     color: #c7d1c8 !important;
+    font-size: 1.6rem;
 }
 
 .text-secondary{
     color: #5c371d !important;
-    font-size: 16pt;
+    font-size: 1.1rem;
 }
 
 .text-dark{
     color: black !important;
+    font-size: 1.5rem;
 }
 
 .text-muted{
     color: gray !important;
+    font-size: 1.2rem;
 }
 
 .footer{
@@ -79,6 +82,11 @@
     margin-top: 7px;
 }
 
+.navbar-logo{
+    min-width: 40px;
+    max-width: 40px;
+}
+
 .rounded{
     border-radius: 20px !important;
 }
@@ -96,7 +104,7 @@
 }
 
 .carousel .carousel-item {
-    height: 500px;
+    height: 300px;
     width: 100%;
 }
 
@@ -105,7 +113,7 @@
     vertical-align: middle;
     object-fit: cover;
     object-position: center center;
-    min-height: 500px;
+    min-height: 300px;
 }
 
 @media screen and (min-width: 685px){
