@@ -19,6 +19,17 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Colors:
+
+Dark green: #5b6d5f
+Light green: #c7d1c8
+Light green obscured: #b0beb2
+Brown: #5c371d
+Light purple: #898293
+Light purple obscured: #6d6676
+
+*/
+
 .body{
     background-image: url("../assets/imgs/background.jpg");
     background-size: 300px auto;
