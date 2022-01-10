@@ -91,6 +91,23 @@
     padding: 0px !important;
 }
 
+.carousel{
+    width: 100%;
+}
+
+.carousel .carousel-item {
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-inner img {
+    margin: 0 auto;
+    vertical-align: middle;
+    object-fit: cover;
+    object-position: center center;
+    min-height: 500px;
+}
+
 @media screen and (min-width: 685px){
     .main__frame{
         height: 450px;
