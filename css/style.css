@@ -128,7 +128,7 @@
     width: 95%;
 }
 
-/* Resizing product images */
+/* Media queries */
 @media screen and (min-width: 576px){
     .img-merch{
         max-width: 350px;
