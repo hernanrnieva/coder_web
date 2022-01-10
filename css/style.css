@@ -139,11 +139,11 @@ Light purple obscured: #6d6676
     width: 100%;
 }
 
-.carousel .carousel-item {
+.carousel .carousel-item{
     width: 100%;
 }
 
-.carousel-inner img {
+.carousel-inner img{
     margin: 0 auto;
     vertical-align: middle;
     object-fit: contain;
@@ -185,7 +185,7 @@ Light purple obscured: #6d6676
 
 /* Animations start */
 /* Hov */
-@keyframes hov {
+@keyframes hov{
     30%{ transform: scale(0.95, 0.95); }
     100%{ transform: scale(1, 1); }
 }
@@ -200,7 +200,7 @@ a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .
 }
 
 /* Darken */
-@keyframes darken {
+@keyframes darken{
     25%{ background-color: #898293; }
     100%{ background-color: #c7d1c8; }
 }
@@ -368,7 +368,7 @@ p:hover{
 }
 
 /* Fix for footer going up in a certain moment */
-@media screen and (min-width: 1324px) {
+@media screen and (min-width: 1324px){
     .img-contact{
         width: 30%;
     }
