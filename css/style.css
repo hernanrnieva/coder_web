@@ -163,6 +163,24 @@ Light purple obscured: #6d6676
     color: black !important;
 }
 
+@keyframes hov{
+    30%{
+        transform: scale(0.95, 0.95)
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
+a .text-dark:hover, a .text-muted:hover, a .footer__img:hover, .img-logo:hover, .img-merch-other:hover{
+    animation-name: hov;
+    animation-duration: 0.5s;
+}
+
+.img-merch-other:hover{
+    animation-duration: 1.2s;
+}
+
 /* Media queries */
 @media screen and (min-width: 576px){
     .img-merch{
