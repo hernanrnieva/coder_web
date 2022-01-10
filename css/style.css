@@ -25,7 +25,7 @@
     font-family: 'Masqualero-Bold', serif !important;
 }
 
-.text-secondary, .text-muted{
+.text-secondary, .text-muted, .text-input{
     font-family: 'Masqualero-Italic', serif !important;
 }
 
@@ -52,6 +52,11 @@
 .text-muted{
     color: gray !important;
     font-size: 1.2rem;
+}
+
+.text-input{
+    color: black !important;
+    font-size: 1.3rem;
 }
 
 .footer{
@@ -133,6 +138,15 @@
     width: 90%;
 }
 
+.img-contact{
+    width: 100%;
+}
+
+.form-input{
+    background-color: #898293;
+    color: black !important;
+}
+
 /* Media queries */
 @media screen and (min-width: 576px){
     .img-merch{
@@ -145,6 +159,10 @@
 
     .img-us{
         width: 80%;
+    }
+
+    .img-contact{
+        width: 70%;
     }
 }
 
@@ -197,6 +215,10 @@
 
     .img-us{
         width: 75%;
+    }
+
+    .img-contact{
+        width: 50%;
     }
 }
 
@@ -270,9 +292,20 @@
     .img-us{
         width: 95%;
     }
+
+    .img-contact{
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 1200px){
+}
+
+/* Fix for footer going up in a certain moment */
+@media screen and (min-width: 1324px) {
+    .img-contact{
+        width: 30%;
+    }
 }
 
 /* Resizing video and map frames */

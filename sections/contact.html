@@ -44,56 +44,57 @@
         </nav>
     </header>
 
-    <main class="row text-center bg-lightpurple justify-items-center pt-3 pb-2">
+    <main class="row text-center bg-lightpurple justify-items-center p-2 pl-4 pr-4 text-center">
         <div class="container-fluid col-12">
+            <h2 class="text-primary mb-sm-2">Reach out to us</h2>
             <form class=" row justify-content-center align-items-center" action="send.php" method="post" enctype="application/x-www-form-urlencoded">
                 <div class="nopadding col-12 col-sm-6">
                     <!-- Fields to fill in-->
-                    <h4 class="text-primary pb-3">Fill in the details below</h4>
+                    <h4 class="text-primary text-primary-small pb-3">Fill in the details below</h4>
                     <div class="row form-group pl-4 pr-4 text-center">
-                        <label class="col-12 col-sm-4" for="name"><h5 class="text-secondary">Name:</h5></label>
-                        <input class="form-control text-center col-12 col-sm-7 mr-2" type="text" name="name" required> <br>
+                        <label class="col-12 col-sm-4" for="name"><h5 class="text-input">Name:</h5></label>
+                        <input class="form-control text-center form-input col-12 col-sm-7 mr-2" type="text" name="name" required><br>
                     </div>
                     <div class="row form-group pl-4 pr-4 text-center">
-                        <label class="col-12 col-sm-4" for="email"><h5 class="text-secondary">Email:</h5></label>
-                        <input class="form-control text-center col-12 col-sm-7 mr-2" type="email" name="email" required> <br>
+                        <label class="col-12 col-sm-4" for="email"><h5 class="text-input">Email:</h5></label>
+                        <input class="form-control text-center form-input col-12 col-sm-7 mr-2" type="email" name="email" required> <br>
                     </div>
                     <div class="row form-group pl-4 pr-4 text-center">
-                        <label class="col-12 col-sm-4" for="age"><h5 class="text-secondary">Age:</h5></label>
-                        <input class="form-control text-center col-12 col-sm-7 mr-2" type="number" name="age" required> <br>
+                        <label class="col-12 col-sm-4" for="age"><h5 class="text-input">Age:</h5></label>
+                        <input class="form-control text-center form-input col-12 col-sm-7 mr-2" type="number" name="age" required> <br>
                     </div>
                     <div class="row form-group pl-4 pr-4 text-center">
-                        <label class="col-12 col-sm-4" for="date"><h5 class="text-secondary">Date:</h5></label>
-                        <input class="form-control text-center col-12 col-sm-7 mr-2" type="date" name="date" required> <br>
+                        <label class="col-12 col-sm-4" for="date"><h5 class="text-input">Date:</h5></label>
+                        <input class="form-control text-center form-input col-12 col-sm-7 mr-2" type="date" name="date" required> <br>
                     </div>
                     <div class="row form-group pl-4 pr-4">
-                        <label class="col-12 col-sm-4" for="Phone"><h5 class="text-secondary">Phone:</h5></label>
-                        <input class="form-control text-center col-12 col-sm-7 mr-2" type="number" name="telephone" required> <br>
+                        <label class="col-12 col-sm-4" for="Phone"><h5 class="text-input">Phone:</h5></label>
+                        <input class="form-control text-center form-input col-12 col-sm-7 mr-2" type="number" name="telephone" required> <br>
                     </div>
                 </div>
                 <div class="container-fluid col-12 col-sm-6">
-                    <h4 class="text-primary pb-3">Select your gender</h4>
+                    <h4 class="text-primary text-primary-small pb-3">Select your gender</h4>
                     <div class="row form-group pl-4 pr-4 text-center">
-                        <select multiple class="form-control ml-4 mr-4" name="Gender">
+                        <select multiple class="form-control ml-4 mr-4 form-input" name="Gender">
                             <option value="M">Masculine</option>
                             <option value="F">Femenine</option>
                             <option value="X">Unspecified</option>
                         </select>
                     </div>
 
-                    <h4 class="text-primary pb-3">Tell us about your inquiry</h4>
-                    <div class="row form-group pl-4 pr-4 text-center">
-                        <textarea class="form-control ml-4 mr-4" name="inquiry" placeholder="Detail everything here"></textarea>
+                    <h4 class="text-primary text-primary-small pb-3">Tell us about your inquiry</h4>
+                    <div class="row form-group pl-4 pr-4 text-center black-color">
+                        <textarea class="form-control ml-4 mr-4 form-input" name="inquiry"></textarea>
                     </div>
                     
-                    <h4 class="text-primary">Select every option that applies</h4>
+                    <h4 class="text-primary text-primary-small">Select every option that applies</h4>
                     <div class="row form-group pl-4 pr-4 text-center justify-content-around">
                         <div class="row form-group pl-4 pr-4 text-center justify-content-around">
-                            <label><h5 class="pt-2 text-secondary">Suscribe to newsletter</h5></label>
+                            <label><h5 class="pt-3 text-input">Suscribe to newsletter</h5></label>
                             <input type="checkbox" class="ml-4">
                         </div>
                         <div class="row form-group pl-4 pr-4 text-center justify-content-around">
-                            <label><h5 class="pt-2 text-secondary">Inform me about any available offers</h5></label>
+                            <label><h5 class="pt-3 text-input">Inform me about any available offers</h5></label>
                             <input type="checkbox" class="ml-4">
                         </div>
                     </div>
@@ -105,6 +106,27 @@
                     <input class="main__form__input main__form__input--button" type="reset" value="Reset">
                 </div>              
             </form>
+        </div>
+
+        <div class="container-fluid col-12 text-center">
+            <h2 class="text-primary mb-sm-2">Or go to our socials</h2>
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.instagram.com/thehorntea">
+                        <img class="img-fluid img-merch mb-2 img-contact" src="../assets/imgs/i_instagram.png" alt="The Horn Tea Teas">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.twitter.com/thehorntea">
+                        <img class="img-fluid img-merch mb-2 img-contact" src="../assets/imgs/i_twitter.png" alt="The Horn Tea Teas">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://web.whatsapp.com">
+                        <img class="img-fluid img-merch mb-2 img-contact" src="../assets/imgs/i_whatsapp.png" alt="The Horn Tea Teas">
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
 
