@@ -14,6 +14,11 @@
     src: url("../assets/fonts/Masqualero-Italic.otf");
 }
 
+/* HTML */
+html{
+    scroll-behavior: smooth;
+}
+
 .body{
     background-image: url("../assets/imgs/background.jpg");
     background-size: 300px auto;
