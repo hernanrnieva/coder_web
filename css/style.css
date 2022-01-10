@@ -34,6 +34,10 @@
     font-size: 1.6rem;
 }
 
+.text-primary-small{
+    font-size: 1.4rem;
+}
+
 .text-secondary{
     color: #5c371d !important;
     font-size: 1.1rem;
@@ -108,17 +112,149 @@
 }
 
 .carousel .carousel-item {
-    height: 300px;
     width: 100%;
 }
 
 .carousel-inner img {
     margin: 0 auto;
     vertical-align: middle;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
-    min-height: 300px;
 }
+
+.img-merch, .img-merch-other{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 95%;
+}
+
+/* Resizing product images */
+@media screen and (min-width: 576px){
+    .img-merch{
+        max-width: 350px;
+    }
+
+    .img-merch-other{
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .carousel .carousel-item{
+        width: 100%;
+        max-height: 515px;
+    }
+
+    .carousel-inner img{
+        max-height: 515px;
+        object-fit: scale-down;
+    }
+
+    .bg-greenimage{
+        background-image: url(../assets/imgs/pub1b.jpg);
+    }
+
+    .bg-yellowimage{
+        background-image: url(../assets/imgs/pub2b.jpg);
+    }
+
+    .text-primary{
+        color: #c7d1c8 !important;
+        font-size: 1.8rem;
+    }
+
+    .text-primary-small{
+        font-size: 1.6rem;
+    }
+
+    .text-secondary{
+        color: #5c371d !important;
+        font-size: 1.2rem;
+    }
+
+    .text-dark{
+        color: black !important;
+        font-size: 1.8rem;
+    }
+
+    .text-muted{
+        color: gray !important;
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-merch{
+        max-width: 600px;
+    }
+
+    .grid-merch{
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "hat box apron apron"
+        "bags bags apron apron"
+        "shirt shirt cup cup0"
+        "shirt shirt van van";
+        justify-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+        align-content: stretch;
+        max-width: 1300px;
+    }
+
+    .img-merch-other{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        padding: 0px;
+    }
+
+    .hat{
+        grid-area: hat;
+    }
+
+    .apron{
+        grid-area: apron;
+    }
+
+    .bags{
+        grid-area: bags;
+    }
+
+    .box{
+        grid-area: box;
+    }
+
+    .cup{
+        grid-area: cup;
+    }
+
+    .cup0{
+        grid-area: cup0;
+    }
+
+    .shirt{
+        grid-area: shirt;
+    }
+
+    .van{
+        grid-area: van;
+    }
+}
+
+@media screen and (min-width: 1200px){
+}
+
+/* Resizing video and map frames */
 
 @media screen and (min-width: 685px){
     .main__frame{
