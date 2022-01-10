@@ -4,141 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstraped.css">
     <title>The Horn Tea House - Products</title>
 </head>
-<body class="body">
+<body class="body container-fluid">
     <!-- Header -->
-    <header class="header">
-        <img class="header__img" src="../assets/imgs/logo.jpg" alt="The Horn Tea Logo">
-        
-        <h1 class="header__title">The Horn Tea</h1>
-
-        <nav class="header__menu">
-            <ul class="menu__list">
-                <li class="menu__list__item"><a class="menu__list__item__link" href="../index.html">Home</a></li>
-                <li class="menu__list__item"><a class="menu__list__item__link"  href="./us.html">Us</a></li>
-                <li class="menu__list__item"><a class="menu__list__item__link"  href="./place.html">Place</a></li>
-                <li class="menu__list__item"><a class="menu__list__item__link"  href="#">Products</a>
-                    <ul class="menu__list__item__sublist">
-                        <li class="menu__list__item__sublist__item"><a  class="menu__list__item__sublist__item__link" href="#black_tea">Black Tea</a></li>
-                        <li class="menu__list__item__sublist__item"><a  class="menu__list__item__sublist__item__link" href="#chill_blend">Chill Blend</a></li>
-                        <li class="menu__list__item__sublist__item"><a  class="menu__list__item__sublist__item__link" href="#earl_grey">Earl Grey</a></li>
-                    </ul>
-                </li>
-                <li class="menu__list__item"><a class="menu__list__item__link" href="./contact.html">Contact</a></li>
-            </ul>
+    <header class="row text-center">
+        <nav class="navbar navbar-expand-sm bg-lightgreen justify-content-around navbar-light fixed-top align-content-center">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="../assets/imgs/logo.jpg" alt="The Horn Tea Logo" width="40px">
+            </a>
+            <a class="navbar-brand navbar__title" href="../index.html"><h4 class="text-dark">The Horn Tea</h4></a>
+            <button class="navbar-toggler bg-lightgreen" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon">
+            </span></button>
+            <div class="collapse navbar-collapse justify-content-around" id="collapsibleNavbar">
+                <ul class="navbar-nav pt-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><h5 class="text-muted">Home</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../sections/us.html"><h5 class="text-muted">Us</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../sections/place.html"><h5 class="text-muted">Place</h5></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#"><h5 class="text-muted d-inline">Products</h5></a>
+                        <div class="dropdown-menu bg-lightgreen">
+                            <a class="dropdown-item" href="../sections/products.html">All</a>
+                            <a class="dropdown-item" href="../sections/products.html#black_tea">Black Tea</a>
+                            <a class="dropdown-item" href="../sections/products.html#chill_blend">Chill Blend</a>
+                            <a class="dropdown-item" href="../sections/products.html#earl_grey">Earl Grey</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../sections/contact.html"><h5 class="text-muted">Contact</h5></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Main -->
-    <main class="main main--twoThirdsMed main--noReduceHigh">
-        <div class="main__div">
-            <div class="main__div main__div--noPadding">
-                <h2 class="main__title">Meet our different types of tea</h2>
-                <img class="main__img main__img--thirdMid" src="../assets/imgs/teas.jpg" alt="The Horn Tea Teas" width="705px" height="500px">
-                <p class="main__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, sequi?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos ad itaque molestias accusamus nam distinctio in excepturi, a ut amet ab laborum vel nesciunt similique, quia optio nihil voluptatum, obcaecati praesentium! Unde magni rem impedit voluptatum at libero similique.</p>
+    <main class="row text-center bg-lightpurple justify-content-around pt-2 pb-4 align-items-center">
+        <div class="container col-12 col-sm-6 col-md-12 -nopadding">
+            <div class="container col-12 col-md-6 -nopadding">
+                <h2 class="text-primary">Meet our different types of tea</h2>
+                <img class="img-fluid" src="../assets/imgs/teas.jpg" alt="The Horn Tea Teas">
+                <p class="bg-lightgreen p-2 rounded text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, sequi?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos ad itaque molestias accusamus nam distinctio in excepturi, a ut amet ab laborum vel nesciunt similique, quia optio nihil voluptatum, obcaecati praesentium! Unde magni rem impedit voluptatum at libero similique.</p>
             </div>
-            <div class="main__div--products">
-                <div class="main__div">
+
+            <div class="container col-12 col-md-6">
+                <div class="row">
                     <section id="black_tea">
-                        <h3 class="main__title main__title--subtitle">Black Tea</h3>
-                        <img class="main__img main__img--small main__img--thirdMid" src="../assets/imgs/black_tea.jpg" alt="The Horn Tea Black Tea">
-                        <p class="main__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, sequi?.</p>
+                        <h3 class="text-primary">Black Tea</h3>
+                        <img class="img-fluid" src="../assets/imgs/black_tea.jpg" alt="The Horn Tea Black Tea">
+                        <p class="bg-lightgreen p-2 rounded text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, sequi?.</p>
                     </section>
                 </div>
-                <div class="main__div">
+                <div class="row">
                     <section id="chill_blend">
-                        <h3 class="main__title main__title--subtitle">Chill Blend</h3>
-                        <img class="main__img main__img--small main__img--thirdMid" src="../assets/imgs/chill_blend.jpg" alt="The Horn Tea Chill Blend">
-                        <p class="main__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae possimus necessitatibus adipisci dolorem perferendis.</p>
+                        <h3 class="text-primary">Chill Blend</h3>
+                        <img class="img-fluid" src="../assets/imgs/chill_blend.jpg" alt="The Horn Tea Chill Blend">
+                        <p class="bg-lightgreen p-2 rounded text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae possimus necessitatibus adipisci dolorem perferendis.</p>
                     </section>
                 </div>
-                <div class="main__div main__div--noReduceSmall">
+                <div class="row">
                     <section id="earl_grey">
-                        <h3 class="main__title main__title--subtitle">Earl Grey</h3>
-                        <img class="main__img main__img--small main__img--thirdMid main__img--thirdMidSmall" src="../assets/imgs/earl_grey.jpg" alt="The Horn Tea Earl Grey" width="339px" height="300px">
-                        <p class="main__text">Lorem ipsum dolor sit.</p>
+                        <h3 class="text-primary">Earl Grey</h3>
+                        <img class="img-fluid" src="../assets/imgs/earl_grey.jpg" alt="The Horn Tea Earl Grey">
+                        <p class="bg-lightgreen p-2 rounded text-secondary">Lorem ipsum dolor sit.</p>
                     </section>      
                 </div>
             </div>
 
-            <div class="main__div">
-                <h2 class="main__title">Comparison between our different teas</h2>
-                <table class="main__table">
-                    <thead class="main__thead">
-                        <th class="main__th">Type</th>
-                        <th class="main__th">Optimal drinking time</th>
-                        <th class="main__th">Ideal consumer</th>
-                    </thead>
-                    <tr class="main__tr">
-                        <td class="main__td main__td--special">Black Tea</td>
-                        <td class="main__td">Morning</td>
-                        <td class="main__td">Kids</td>
-                    </tr>
-                    <tr class="main__tr">
-                        <td class="main__td main__td--special">Chill Blend</td>
-                        <td class="main__td">Afternoon</td>
-                        <td class="main__td">Daily workers</td>
-                    </tr>
-                    <tr class="main__tr">
-                        <td class="main__td main__td--special">Earl Grey</td>
-                        <td class="main__td">After dinner</td>
-                        <td class="main__td">Elders</td>
-                    </tr>
-                </table>
-            </div>
         </div>
 
-        <div class="main__div">
-            <h2 class="main__title">Other Merch</h2>
-            <div class="main__div--noPadding main__div--merchandising">
-                <img class="main__img main__img--product main__img--hat" src="../assets/imgs/hat.jpg" alt="The Horn Tea Tea Hat">
-                <img class="main__img main__img--product main__img--apron" src="../assets/imgs/apron.jpg" alt="The Horn Tea Apron">
-                <img class="main__img main__img--product main__img--bags" src="../assets/imgs/bags.jpg" alt="The Horn Tea Bags">
-                <img class="main__img main__img--product main__img--box" src="../assets/imgs/box.jpg" alt="The Horn Tea Box">
-                <img class="main__img main__img--product main__img--cup" src="../assets/imgs/cup.jpg" alt="The Horn Tea Cup">
-                <img class="main__img main__img--product main__img--cup0" src="../assets/imgs/cup0.jpg" alt="The Horn Tea Cup">
-                <img class="main__img main__img--product main__img--shirt" src="../assets/imgs/shirt.jpg" alt="The Horn Tea Shirt">
-                <img class="main__img main__img--product main__img--van" src="../assets/imgs/van.jpg" alt="The Horn Tea Van">
+        <div class="container col-12 col-sm-6 col-md-12">
+            <h2 class="text-primary">Other Merch</h2>
+            <div class="">
+                <img class="img-fluid" src="../assets/imgs/hat.jpg" alt="The Horn Tea Tea Hat">
+                <img class="img-fluid" src="../assets/imgs/apron.jpg" alt="The Horn Tea Apron">
+                <img class="img-fluid" src="../assets/imgs/bags.jpg" alt="The Horn Tea Bags">
+                <img class="img-fluid" src="../assets/imgs/box.jpg" alt="The Horn Tea Box">
+                <img class="img-fluid" src="../assets/imgs/cup.jpg" alt="The Horn Tea Cup">
+                <img class="img-fluid" src="../assets/imgs/cup0.jpg" alt="The Horn Tea Cup">
+                <img class="img-fluid" src="../assets/imgs/shirt.jpg" alt="The Horn Tea Shirt">
+                <img class="img-fluid" src="../assets/imgs/van.jpg" alt="The Horn Tea Van">
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="row footer bg-lightgreen text-center p-1">
         <!-- "Socials" section -->
-        <section class="footer__socials">
-            <h2 class="footer__title">Socials:</h2>
+        <div class=" container col-12 col-sm-6 text-center d-flex align-items-center justify-content-center pt-1 pb-1">
+            <h3>Socials:</h3>
 
-            <ul class="footer__socials__list" style="list-style-type: none;">
-                <li class="footer__socials__list__item"><a href="https://www.instagram.com/thehorntea" target="_blank" class="footer__link">
-                    <img class="footer__img" src="../assets/imgs/i_instagram.png" alt="Instagram Contact The Horn Tea">
-                </a></li>
-                <li class="footer__socials__list__item"><a href="https://twitter.com/thehorntea" target="_blank" class="footer__link">
-                    <img class="footer__img" src="../assets/imgs/i_twitter.png" alt="Twitter Contact The Horn Tea">
-                </a></li>
-                <li class="footer__socials__list__item"><a href="https://web.whatsapp.com" target="_blank" class="footer__link">
-                    <img class="footer__img" src="../assets/imgs/i_whatsapp.png" alt="Whatsapp Contact The Horn Tea">
-                </a></li>
+            <nav class="navbar navbar--nopadding">
+                <ul class="navbar-nav navbar-expand">
+                    <li class="nav-item"><a href="https://www.instagram.com/thehorntea" target="_blank">
+                        <img class="footer__img" src="../assets/imgs/i_instagram.png" alt="Instagram Contact The Horn Tea">
+                    </a></li>
+                    <li class="nav-item"><a href="https://twitter.com/thehorntea" target="_blank">
+                        <img class="footer__img" src="../assets/imgs/i_twitter.png" alt="Twitter Contact The Horn Tea">
+                    </a></li>
+                    <li class="nav-item"><a href="https://web.whatsapp.com" target="_blank">
+                        <img class="footer__img" src="../assets/imgs/i_whatsapp.png" alt="Whatsapp Contact The Horn Tea">
+                    </a></li>
             </ul>
-        </section>
+            </nav>
+        </div>
 
-        <!-- "Contact" section -->
-        <section class="footer__contact">
-            <h2 class="footer__title">Contact:</h2>
-            <a class="footer__link" href="../sections/contact.html">
+        <div class="container col-12 col-sm-3 text-center d-flex align-items-center justify-content-center pt-1 pb-1">
+            <h3>Contact:</h3>
+            <a href="../sections/contact.html">
                 <img class="footer__img" src="../assets/imgs/i_contact.png" alt="Contact The Horn Tea">
             </a>
-        </section>
-    
-        <!-- "Go up" section -->
-        <section class="footer__up">
-            <h2 class="footer__title">Go up:</h2>
-            <a class="footer__link" href="#">
+        </div>
+
+        <div class="container col-12 col-sm-3 text-center d-flex align-items-center justify-content-center pt-1 pb-1">
+            <h3>Up:</h3>
+            <a href="#">
                 <img class="footer__img" src="../assets/imgs/i_up.png" alt="Up Arrow The Horn Tea">
             </a>
-        </section>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
