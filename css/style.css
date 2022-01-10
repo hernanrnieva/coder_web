@@ -129,6 +129,10 @@
     width: 95%;
 }
 
+.img-us{
+    width: 90%;
+}
+
 /* Media queries */
 @media screen and (min-width: 576px){
     .img-merch{
@@ -137,6 +141,10 @@
 
     .img-merch-other{
         max-width: 300px;
+    }
+
+    .img-us{
+        width: 80%;
     }
 }
 
@@ -185,6 +193,10 @@
     .text-muted{
         color: gray !important;
         font-size: 1.6rem;
+    }
+
+    .img-us{
+        width: 75%;
     }
 }
 
@@ -253,6 +265,10 @@
 
     .van{
         grid-area: van;
+    }
+
+    .img-us{
+        width: 95%;
     }
 }
 
