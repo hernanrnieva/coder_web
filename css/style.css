@@ -19,17 +19,16 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Colors:
-
+/* Colors 
 Dark green: #5b6d5f
 Light green: #c7d1c8
 Light green obscured: #b0beb2
 Brown: #5c371d
 Light purple: #898293
 Light purple obscured: #6d6676
-
 */
 
+/* Generalities start */
 .body{
     background-image: url("../assets/imgs/background.jpg");
     background-size: 300px auto;
@@ -37,6 +36,43 @@ Light purple obscured: #6d6676
     padding-top: 100px;
 }
 
+.rounded{
+    border-radius: 20px !important;
+}
+
+.nopadding{
+    padding: 0px !important;
+}
+
+.main-frame{
+    height: 350px;
+}
+
+.form-input{
+    background-color: #898293;
+    color: black !important;
+}
+
+.bg-greenimage{
+    background-image: url(../assets/imgs/pub1b.jpg);
+}
+
+.bg-yellowimage{
+    background-image: url(../assets/imgs/pub2b.jpg);
+}
+/* Generalities end */
+
+/* Background styling start */
+.bg-lightgreen{
+    background-color: #c7d1c8;
+}
+
+.bg-lightpurple{
+    background-color: #898293;
+}
+/* Background styling end */
+
+/* Text styling start*/
 .text-primary, .text-dark, .text-muted{
     font-family: 'Masqualero-Bold', serif !important;
 }
@@ -74,29 +110,9 @@ Light purple obscured: #6d6676
     color: black !important;
     font-size: 1.3rem;
 }
+/* Text styling end*/
 
-.footer{
-    margin-top: 30px;
-}
-
-.footer__img{
-    width: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.footer-text{
-    margin-top: 6px;
-}
-
-.bg-lightgreen{
-    background-color: #c7d1c8;
-}
-
-.bg-lightpurple{
-    background-color: #898293;
-}
-
+/* Navbar start */
 .navbar-nav{
     flex: 1;
     margin: auto !important;
@@ -104,11 +120,11 @@ Light purple obscured: #6d6676
     justify-content: space-around;
 }
 
-.navbar--nopadding{
+.navbar-nopadding{
     padding: 0px;
 }
 
-.navbar__title{
+.navbar-title{
     margin-top: 7px;
 }
 
@@ -116,19 +132,9 @@ Light purple obscured: #6d6676
     min-width: 40px;
     max-width: 40px;
 }
+/* Navbar end */
 
-.rounded{
-    border-radius: 20px !important;
-}
-
-.main__frame{
-    height: 350px;
-}
-
-.nopadding{
-    padding: 0px !important;
-}
-
+/* Carousel start */
 .carousel{
     width: 100%;
 }
@@ -143,7 +149,25 @@ Light purple obscured: #6d6676
     object-fit: contain;
     object-position: center center;
 }
+/* Carousel end */
 
+/* Footer start */
+.footer{
+    margin-top: 30px;
+}
+
+.footer__img{
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-text{
+    margin-top: 6px;
+}
+/* Footer end */
+
+/* Images styling start */
 .img-merch, .img-merch-other{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -157,19 +181,13 @@ Light purple obscured: #6d6676
 .img-contact{
     width: 100%;
 }
+/* Images styling end */
 
-.form-input{
-    background-color: #898293;
-    color: black !important;
-}
-
+/* Animations start */
+/* Hov */
 @keyframes hov {
-    30%{
-        transform: scale(0.95, 0.95)
-    }
-    100%{
-        transform: scale(1, 1);
-    }
+    30%{ transform: scale(0.95, 0.95); }
+    100%{ transform: scale(1, 1); }
 }
 
 a .text-dark:hover, a .text-muted:hover, a .footer__img:hover, .img-logo:hover, .img-merch-other:hover{
@@ -181,22 +199,22 @@ a .text-dark:hover, a .text-muted:hover, a .footer__img:hover, .img-logo:hover, 
     animation-duration: 1.2s;
 }
 
+/* Darken */
 @keyframes darken {
-    25%{
-        background-color: #898293;
-    }
-    100%{
-        background-color: #c7d1c8;
-    }
+    25%{ background-color: #898293; }
+    100%{ background-color: #c7d1c8; }
 }
 
 p:hover{
     animation-name: darken;
     animation-duration: 1s;
 }
+/* Animations end */
 
-/* Media queries */
+/* Media queries start */
+/* xd to sm */
 @media screen and (min-width: 576px){
+    /* Img resizing */
     .img-merch{
         max-width: 350px;
     }
@@ -214,11 +232,14 @@ p:hover{
     }
 }
 
+/* sm to md */
 @media screen and (min-width: 768px){
+    /* Top padding resizing */
     .body{
         padding-top: 110px;
     }
 
+    /* Carousel resizing */
     .carousel .carousel-item{
         width: 100%;
         max-height: 515px;
@@ -226,17 +247,9 @@ p:hover{
 
     .carousel-inner img{
         max-height: 515px;
-        object-fit: scale-down;
     }
 
-    .bg-greenimage{
-        background-image: url(../assets/imgs/pub1b.jpg);
-    }
-
-    .bg-yellowimage{
-        background-image: url(../assets/imgs/pub2b.jpg);
-    }
-
+    /* Text resizing */
     .text-primary{
         color: #c7d1c8 !important;
         font-size: 1.8rem;
@@ -261,6 +274,7 @@ p:hover{
         font-size: 1.6rem;
     }
 
+    /* Img resizing */
     .img-us{
         width: 75%;
     }
@@ -270,7 +284,9 @@ p:hover{
     }
 }
 
+/* md to lg */
 @media screen and (min-width: 992px){
+    /* Merch grid display implementation */
     .grid{
         display: flex;
         flex-direction: column;
@@ -337,6 +353,7 @@ p:hover{
         grid-area: van;
     }
 
+    /* Img resi<ing */
     .img-us{
         width: 95%;
     }
@@ -346,6 +363,7 @@ p:hover{
     }
 }
 
+/* lg to xl */
 @media screen and (min-width: 1200px){
 }
 
@@ -356,22 +374,22 @@ p:hover{
     }
 }
 
-/* Resizing video and map frames */
-
+/* Media Queries for resizing video and map frames */
 @media screen and (min-width: 685px){
-    .main__frame{
+    .main-frame{
         height: 450px;
     }
 }
 
 @media screen and (min-width: 992px){
-    .main__frame{
+    .main-frame{
         height: 300px;
     }
 }
 
 @media screen and (min-width: 1200px){
-    .main__frame{
+    .main-frame{
         height: 400px;
     }
 }
+/* Media queries end */
