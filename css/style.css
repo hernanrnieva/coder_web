@@ -190,7 +190,7 @@ Light purple obscured: #6d6676
     100%{ transform: scale(1, 1); }
 }
 
-a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .img-merch-other:hover{
+a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .img-merch-other:hover, .dropdown-toggle:hover{
     animation-name: hov;
     animation-duration: 0.5s;
 }
