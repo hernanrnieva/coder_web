@@ -1,0 +1,362 @@
+/* Fonts */
+@font-face{
+    font-family: 'Masqualero-Regular';
+    src: url("../assets/fonts/Masqualero-Regular.otf");
+}
+
+@font-face{
+    font-family: 'Masqualero-Bold';
+    src: url("../assets/fonts/Masqualero-Bold.otf");
+}
+
+@font-face{
+    font-family: 'Masqualero-Italic';
+    src: url("../assets/fonts/Masqualero-Italic.otf");
+}
+
+// Variables start //
+// Colors
+$dgreen: #5b6d5f;
+$lgreen: #c7d1c8;
+$ldgreen: #b0beb2;
+$brown: #5c371d;
+$lpurple: #898293;
+$ldpurple: #6d6676;
+$black: #000000;
+$gray: rgb(128, 128, 128);
+
+// Fonts
+$masqreg: 'Masqualero-Regular';
+$masqbold: 'Masqualero-Bold';
+$masqitalic: 'Masqualero-Italic';
+$serif: 'serif';
+
+// Carousel parameters
+$maxs: 515px;
+// Variables end //
+
+/* HTML */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Generalities start */
+.body{
+    background-image: url("../assets/imgs/background.jpg");
+    background-size: 300px auto;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+.rounded{
+    border-radius: 20px !important;
+}
+
+.nopadding{
+    padding: 0px !important;
+}
+
+.main-frame{
+    height: 350px;
+}
+
+.form-input{
+    background-color: $lpurple;
+    color: $black !important;
+}
+
+.bg-greenimage{
+    background-image: url(../assets/imgs/pub1b.jpg);
+}
+
+.bg-yellowimage{
+    background-image: url(../assets/imgs/pub2b.jpg);
+}
+/* Generalities end */
+
+/* Background styling start */
+.bg-lightgreen{
+    background-color: $lgreen;
+}
+
+.bg-lightpurple{
+    background-color: $lpurple;
+}
+/* Background styling end */
+
+/* Text styling start*/
+.text-primary, .text-dark, .text-muted{
+    font-family: $masqbold, $serif !important;
+}
+
+.text-secondary, .text-muted, .text-input{
+    font-family: $masqitalic, $serif !important;
+}
+
+.text-primary{
+    color: $lgreen !important;
+    font-size: 1.6rem;
+}
+
+.text-primary-small{
+    font-size: 1.4rem;
+}
+
+.text-secondary{
+    color: $brown !important;
+    font-size: 1.1rem;
+}
+
+.text-dark{
+    color: $black !important;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px grey;
+}
+
+.text-muted{
+    color: $gray !important;
+    font-size: 1.2rem;
+}
+
+.text-input{
+    color: $black !important;
+    font-size: 1.3rem;
+}
+/* Text styling end*/
+
+/* Navbar start */
+.navbar-nav{
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-nopadding{
+    padding: 0px;
+}
+
+.navbar-title{
+    margin-top: 7px;
+}
+
+.navbar-logo{
+    min-width: 40px;
+    max-width: 40px;
+}
+/* Navbar end */
+
+/* Carousel start */
+.carousel{
+    width: 100%;
+}
+
+.carousel{
+    .carousel-item{
+        width: 100%;
+        max-height: $maxs;
+    }
+}
+
+.carousel-inner {
+    img{
+        margin: 0 auto;
+        vertical-align: middle;
+        object-fit: contain;
+        object-position: center center;
+        max-height: 515px;
+    }
+}
+/* Carousel end */
+
+/* Images styling start */
+.img-merch, .img-merch-other{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 95%;
+}
+
+.img-us, .img-place{
+    width: 90%;
+}
+
+.img-contact{
+    width: 100%;
+}
+/* Images styling end */
+
+/* Media queries start */
+/* xd to sm */
+@media screen and (min-width: 576px){
+    /* Img resizing */
+    .img-merch{
+        max-width: 350px;
+    }
+
+    .img-merch-other{
+        max-width: 300px;
+    }
+
+    .img-us{
+        width: 80%;
+    }
+
+    .img-contact{
+        width: 70%;
+    }
+}
+
+/* sm to md */
+@media screen and (min-width: 768px){
+    /* Top padding resizing */
+    .body{
+        padding-top: 110px;
+    }
+
+    /* Text resizing */
+    .text-primary{
+        color: #c7d1c8 !important;
+        font-size: 1.8rem;
+    }
+
+    .text-primary-small{
+        font-size: 1.6rem;
+    }
+
+    .text-secondary{
+        color: #5c371d !important;
+        font-size: 1.2rem;
+    }
+
+    .text-dark{
+        color: black !important;
+        font-size: 1.8rem;
+    }
+
+    .text-muted{
+        color: gray !important;
+        font-size: 1.6rem;
+    }
+
+    /* Img resizing */
+    .img-us{
+        width: 75%;
+    }
+
+    .img-contact{
+        width: 50%;
+    }
+}
+
+/* md to lg */
+@media screen and (min-width: 992px){
+    /* Merch grid display implementation */
+    .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-merch{
+        max-width: 600px;
+    }
+
+    .grid-merch{
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "hat box apron apron"
+        "bags bags apron apron"
+        "shirt shirt cup cup0"
+        "shirt shirt van van";
+        justify-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+        align-content: stretch;
+        max-width: 1400px;
+    }
+
+    .img-merch-other{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        padding: 0px;
+    }
+
+    .hat{
+        grid-area: hat;
+    }
+
+    .apron{
+        grid-area: apron;
+    }
+
+    .bags{
+        grid-area: bags;
+    }
+
+    .box{
+        grid-area: box;
+    }
+
+    .cup{
+        grid-area: cup;
+    }
+
+    .cup0{
+        grid-area: cup0;
+    }
+
+    .shirt{
+        grid-area: shirt;
+    }
+
+    .van{
+        grid-area: van;
+    }
+
+    /* Img resizing */
+    .img-us{
+        width: 95%;
+    }
+
+    .img-contact{
+        width: 40%;
+    }
+}
+
+/* lg to xl */
+@media screen and (min-width: 1200px){
+}
+
+/* Fix for footer going up in a certain moment */
+@media screen and (min-width: 1324px){
+    .img-contact{
+        width: 30%;
+    }
+}
+
+/* Media Queries for resizing video and map frames */
+@media screen and (min-width: 685px){
+    .main-frame{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .main-frame{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main-frame{
+        height: 400px;
+    }
+}
+/* Media queries end */
+
+@import "./footer";
+@import "./animations";
