@@ -68,11 +68,11 @@ html{
 
 /* Text styling start*/
 .text-primary, .text-dark, .text-muted{
-    font-family: $masqbold, $serif !important;
+    font-family: map-get($fonts, masqbold), map-get($fonts, serif) !important;
 }
 
 .text-secondary, .text-muted, .text-input{
-    font-family: $masqitalic, $serif !important;
+    font-family: map-get($fonts, masqitalic), map-get($fonts, serif) !important;
 }
 
 .text-primary{

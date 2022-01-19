@@ -4,14 +4,16 @@ $colors: (
     huntergreen: #31572c,
     sapgreen: #4f772d,
     olive: #90a955,
-    lime: #ecf39e,
+    lime: #ecf39e
 );
 
 // Fonts
-$masqreg: 'Masqualero-Regular';
-$masqbold: 'Masqualero-Bold';
-$masqitalic: 'Masqualero-Italic';
-$serif: 'serif';
+$fonts: (
+    masqreg: 'Masqualero-Regular',
+    masqbold: 'Masqualero-Bold',
+    masqitalic: 'Masqualero-Italic',
+    serif: 'serif'
+);
 
 // Carousel parameters
 $maxs: 515px;
