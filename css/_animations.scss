@@ -6,12 +6,12 @@
     100%{ transform: scale(1, 1); }
 }
 
-a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .img-merch-other:hover, .dropdown-toggle:hover{
+a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .img-merch-shadowed:hover, .dropdown-toggle:hover{
     animation-name: hov;
     animation-duration: 0.5s;
 }
 
-.img-merch-other:hover{
+.img-merch-shadowed:hover{
     animation-duration: 1.2s;
 }
 

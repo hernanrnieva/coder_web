@@ -157,10 +157,15 @@ html{
 /* Carousel end */
 
 /* Images styling start */
-.img-merch, .img-merch-other{
+.img-merch{
     padding-top: 10px;
     padding-bottom: 10px;
     @include sizes(95%, auto);
+}
+
+.img-merch-shadowed{
+    @extend .img-merch;
+    box-shadow: 5px 5px 5px 5px map-get($colors, darkgreen);
 }
 
 .img-us, .img-place{
@@ -180,7 +185,7 @@ html{
         max-width: 350px;
     }
 
-    .img-merch-other{
+    .img-merch-shadowed{
         max-width: 300px;
     }
 
@@ -260,7 +265,7 @@ html{
         max-width: 1400px;
     }
 
-    .img-merch-other{
+    .img-merch-shadowed{
         object-fit: cover;
         @include sizes(100%, 100%);
         max-width: none;
