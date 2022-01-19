@@ -17,8 +17,8 @@ a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .
 
 /* Darken */
 @keyframes darken{
-    25%{ background-color: $sapgreen; }
-    100%{ background-color: $lime; }
+    25%{ background-color: map-get($colors, sapgreen); }
+    100%{ background-color: map-get($colors, lime); }
 }
 
 p:hover{

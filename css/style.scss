@@ -43,8 +43,8 @@ html{
 }
 
 .form-input{
-    background-color: $sapgreen;
-    color: $darkgreen !important;
+    background-color: map-get($colors, sapgreen);
+    color: map-get($colors, darkgreen) !important;
 }
 
 .bg-greenimage{
@@ -58,11 +58,11 @@ html{
 
 /* Background styling start */
 .bg-lightgreen{
-    background-color: $lime;
+    background-color: map-get($colors, lime);
 }
 
 .bg-lightpurple{
-    background-color: $sapgreen;
+    background-color: map-get($colors, sapgreen);
 }
 /* Background styling end */
 
@@ -76,7 +76,7 @@ html{
 }
 
 .text-primary{
-    color: $lime !important;
+    color: map-get($colors, lime) !important;
     font-size: 1.6rem;
 }
 
@@ -85,23 +85,23 @@ html{
 }
 
 .text-secondary{
-    color: $huntergreen !important;
+    color: map-get($colors, huntergreen) !important;
     font-size: 1.1rem;
 }
 
 .text-dark{
-    color: $darkgreen !important;
+    color: map-get($colors, darkgreen) !important;
     font-size: 1.5rem;
     text-shadow: 0 0 5px grey;
 }
 
 .text-muted{
-    color: $sapgreen !important;
+    color: map-get($colors, sapgreen) !important;
     font-size: 1.2rem;
 }
 
 .text-input{
-    color: $darkgreen !important;
+    color: map-get($colors, darkgreen) !important;
     font-size: 1.3rem;
 }
 /* Text styling end*/
