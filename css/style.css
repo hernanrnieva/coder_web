@@ -40,8 +40,8 @@ html {
 }
 
 .form-input {
-  background-color: #898293;
-  color: #000000 !important;
+  background-color: #4f772d;
+  color: #132a13 !important;
 }
 
 .bg-greenimage {
@@ -55,11 +55,11 @@ html {
 /* Generalities end */
 /* Background styling start */
 .bg-lightgreen {
-  background-color: #c7d1c8;
+  background-color: #ecf39e;
 }
 
 .bg-lightpurple {
-  background-color: #898293;
+  background-color: #4f772d;
 }
 
 /* Background styling end */
@@ -73,7 +73,7 @@ html {
 }
 
 .text-primary {
-  color: #c7d1c8 !important;
+  color: #ecf39e !important;
   font-size: 1.6rem;
 }
 
@@ -82,23 +82,23 @@ html {
 }
 
 .text-secondary {
-  color: #5c371d !important;
+  color: #31572c !important;
   font-size: 1.1rem;
 }
 
 .text-dark {
-  color: #000000 !important;
+  color: #132a13 !important;
   font-size: 1.5rem;
   text-shadow: 0 0 5px grey;
 }
 
 .text-muted {
-  color: gray !important;
+  color: #4f772d !important;
   font-size: 1.2rem;
 }
 
 .text-input {
-  color: #000000 !important;
+  color: #132a13 !important;
   font-size: 1.3rem;
 }
 
@@ -193,22 +193,18 @@ html {
   }
   /* Text resizing */
   .text-primary {
-    color: #c7d1c8 !important;
     font-size: 1.8rem;
   }
   .text-primary-small {
     font-size: 1.6rem;
   }
   .text-secondary {
-    color: #5c371d !important;
     font-size: 1.2rem;
   }
   .text-dark {
-    color: black !important;
     font-size: 1.8rem;
   }
   .text-muted {
-    color: gray !important;
     font-size: 1.6rem;
   }
   /* Img resizing */
@@ -398,18 +394,18 @@ a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .
 /* Darken */
 @-webkit-keyframes darken {
   25% {
-    background-color: #898293;
+    background-color: #4f772d;
   }
   100% {
-    background-color: #c7d1c8;
+    background-color: #ecf39e;
   }
 }
 @keyframes darken {
   25% {
-    background-color: #898293;
+    background-color: #4f772d;
   }
   100% {
-    background-color: #c7d1c8;
+    background-color: #ecf39e;
   }
 }
 

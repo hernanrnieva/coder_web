@@ -14,26 +14,8 @@
     src: url("../assets/fonts/Masqualero-Italic.otf");
 }
 
-// Variables start //
-// Colors
-$dgreen: #5b6d5f;
-$lgreen: #c7d1c8;
-$ldgreen: #b0beb2;
-$brown: #5c371d;
-$lpurple: #898293;
-$ldpurple: #6d6676;
-$black: #000000;
-$gray: rgb(128, 128, 128);
-
-// Fonts
-$masqreg: 'Masqualero-Regular';
-$masqbold: 'Masqualero-Bold';
-$masqitalic: 'Masqualero-Italic';
-$serif: 'serif';
-
-// Carousel parameters
-$maxs: 515px;
-// Variables end //
+// Variables import //
+@import "./variables";
 
 /* HTML */
 html{
@@ -61,8 +43,8 @@ html{
 }
 
 .form-input{
-    background-color: $lpurple;
-    color: $black !important;
+    background-color: $sapgreen;
+    color: $darkgreen !important;
 }
 
 .bg-greenimage{
@@ -76,11 +58,11 @@ html{
 
 /* Background styling start */
 .bg-lightgreen{
-    background-color: $lgreen;
+    background-color: $lime;
 }
 
 .bg-lightpurple{
-    background-color: $lpurple;
+    background-color: $sapgreen;
 }
 /* Background styling end */
 
@@ -94,7 +76,7 @@ html{
 }
 
 .text-primary{
-    color: $lgreen !important;
+    color: $lime !important;
     font-size: 1.6rem;
 }
 
@@ -103,23 +85,23 @@ html{
 }
 
 .text-secondary{
-    color: $brown !important;
+    color: $huntergreen !important;
     font-size: 1.1rem;
 }
 
 .text-dark{
-    color: $black !important;
+    color: $darkgreen !important;
     font-size: 1.5rem;
     text-shadow: 0 0 5px grey;
 }
 
 .text-muted{
-    color: $gray !important;
+    color: $sapgreen !important;
     font-size: 1.2rem;
 }
 
 .text-input{
-    color: $black !important;
+    color: $darkgreen !important;
     font-size: 1.3rem;
 }
 /* Text styling end*/
@@ -215,7 +197,6 @@ html{
 
     /* Text resizing */
     .text-primary{
-        color: #c7d1c8 !important;
         font-size: 1.8rem;
     }
 
@@ -224,17 +205,14 @@ html{
     }
 
     .text-secondary{
-        color: #5c371d !important;
         font-size: 1.2rem;
     }
 
     .text-dark{
-        color: black !important;
         font-size: 1.8rem;
     }
 
     .text-muted{
-        color: gray !important;
         font-size: 1.6rem;
     }
 
