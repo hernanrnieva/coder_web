@@ -255,7 +255,7 @@ html {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "hat box apron apron" "bags bags apron apron" "shirt shirt cup cup0" "shirt shirt van van";
+        grid-template-areas: "hat box apron apron bags bags apron apron shirt shirt cup cup0 shirt shirt van van";
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
             justify-content: stretch;
@@ -282,14 +282,13 @@ html {
   }
   .apron {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 6;
     grid-area: apron;
   }
   .bags {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-area: bags;
   }
@@ -299,25 +298,24 @@ html {
     grid-area: box;
   }
   .cup {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 11;
     grid-area: cup;
   }
   .cup0 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 4;
+    -ms-grid-row: 1;
+    -ms-grid-column: 12;
     grid-area: cup0;
   }
   .shirt {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 6;
     grid-area: shirt;
   }
   .van {
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 15;
     -ms-grid-column-span: 2;
     grid-area: van;
   }
@@ -333,6 +331,7 @@ html {
 }
 
 /* lg to xl */
+/* @media screen and (min-width: 1200px) */
 /* Fix for footer going up in a certain moment */
 @media screen and (min-width: 1324px) {
   .img-contact {

@@ -1,0 +1,272 @@
+/* Fonts */
+@font-face
+    font-family: 'Masqualero-Regular'
+    src: url("../assets/fonts/Masqualero-Regular.otf")
+
+@font-face
+    font-family: 'Masqualero-Bold'
+    src: url("../assets/fonts/Masqualero-Bold.otf")
+
+@font-face
+    font-family: 'Masqualero-Italic'
+    src: url("../assets/fonts/Masqualero-Italic.otf")
+
+// Variables import //
+@import "./variables"
+
+/* HTML */
+html
+    scroll-behavior: smooth
+
+@mixin sizes($width, $height)
+    height: $height
+    width: $width
+
+/* Generalities start */
+.body
+    background-image: url("../assets/imgs/bckg/background.jpg")
+    background-size: 300px auto
+    background-attachment: fixed
+    padding-top: 100px
+
+.rounded
+    border-radius: 20px !important
+
+.nopadding
+    padding: 0px !important
+
+.main-frame
+    @include sizes(100%, 350px)
+
+.form-input
+    background-color: map-get($colors, sapgreen)
+    color: map-get($colors, darkgreen) !important
+
+.bg-greenimage
+    background-image: url(../assets/imgs/carousel/pub1b.jpg)
+
+.bg-yellowimage
+    background-image: url(../assets/imgs/carousel/pub2b.jpg)
+/* Generalities end */
+
+/* Background styling start */
+.bg-lightgreen
+    background-color: map-get($colors, lime)
+
+.bg-lightpurple
+    background-color: map-get($colors, sapgreen)
+/* Background styling end */
+
+/* Text styling start*/
+.text-primary, .text-dark, .text-muted
+    font-family: map-get($fonts, masqbold), map-get($fonts, serif) !important
+
+.text-secondary, .text-muted, .text-input
+    font-family: map-get($fonts, masqitalic), map-get($fonts, serif) !important
+
+.text-primary
+    color: map-get($colors, lime) !important
+    font-size: 1.6rem
+
+.text-primary-small
+    font-size: 1.4rem
+
+.text-secondary
+    color: map-get($colors, huntergreen) !important
+    font-size: 1.1rem
+
+.text-dark
+    color: map-get($colors, darkgreen) !important
+    font-size: 1.5rem
+    text-shadow: 0 0 5px grey
+
+.text-muted
+    color: map-get($colors, sapgreen) !important
+    font-size: 1.2rem
+
+.text-input
+    color: map-get($colors, darkgreen) !important
+    font-size: 1.3rem
+/* Text styling end*/
+
+/* Navbar start */
+.navbar-nav
+    flex: 1
+    margin: auto !important
+    display: flex
+    justify-content: space-around
+
+.navbar-nopadding
+    padding: 0px
+
+.navbar-title
+    margin-top: 7px
+
+.navbar-logo
+    min-width: 40px
+    max-width: 40px
+/* Navbar end */
+
+/* Carousel start */
+.carousel
+    @include sizes(100%, auto)
+
+.carousel
+    .carousel-item
+        @include sizes(100%, auto)
+        max-height: $maxs
+
+.carousel-inner
+    img
+        margin: 0 auto
+        vertical-align: middle
+        object-fit: contain
+        object-position: center center
+        max-height: 515px
+/* Carousel end */
+
+/* Images styling start */
+.img-merch
+    padding-top: 10px
+    padding-bottom: 10px
+    @include sizes(95%, auto)
+
+.img-merch-shadowed
+    @extend .img-merch
+    box-shadow: 5px 5px 5px 5px map-get($colors, darkgreen)
+
+.img-us, .img-place
+    @include sizes(90%, auto)
+
+.img-contact
+    @include sizes(100%, auto)
+/* Images styling end */
+
+/* Media queries start */
+/* xd to sm */
+@media screen and (min-width: 576px)
+    /* Img resizing */
+    .img-merch
+        max-width: 350px
+
+    .img-merch-shadowed
+        max-width: 300px
+
+    .img-us
+        @include sizes(80%, auto)
+
+    .img-contact
+        @include sizes(70%, auto)
+
+/* sm to md */
+@media screen and (min-width: 768px)
+    /* Top padding resizing */
+    .body
+        padding-top: 110px
+
+    /* Text resizing */
+    .text-primary
+        font-size: 1.8rem
+
+    .text-primary-small
+        font-size: 1.6rem
+
+    .text-secondary
+        font-size: 1.2rem
+
+    .text-dark
+        font-size: 1.8rem
+
+    .text-muted
+        font-size: 1.6rem
+
+    /* Img resizing */
+    .img-us
+        @include sizes(75%, auto)
+
+    .img-contact
+        @include sizes(50%, auto)
+
+/* md to lg */
+@media screen and (min-width: 992px)
+    /* Merch grid display implementation */
+    .grid
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .img-merch
+        max-width: 600px
+
+    .grid-merch
+        grid-gap: 20px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-template-areas: "hat box apron apron bags bags apron apron shirt shirt cup cup0 shirt shirt van van"
+        justify-content: stretch
+        justify-items: stretch
+        align-items: stretch
+        align-content: stretch
+        max-width: 1400px
+
+    .img-merch-shadowed
+        object-fit: cover
+        @include sizes(100%, 100%)
+        max-width: none
+        padding: 0px
+
+    .hat
+        grid-area: hat
+
+    .apron
+        grid-area: apron
+
+    .bags
+        grid-area: bags
+
+    .box
+        grid-area: box
+
+    .cup
+        grid-area: cup
+
+    .cup0
+        grid-area: cup0
+
+    .shirt
+        grid-area: shirt
+
+    .van
+        grid-area: van
+
+    /* Img resizing */
+    .img-us
+        @include sizes(95%, auto)
+
+    .img-contact
+        @include sizes(40%, auto)
+
+/* lg to xl */
+/* @media screen and (min-width: 1200px) */
+
+/* Fix for footer going up in a certain moment */
+@media screen and (min-width: 1324px)
+    .img-contact
+        @include sizes(30%, auto)
+
+/* Media Queries for resizing video and map frames */
+@media screen and (min-width: 685px)
+    .main-frame
+        @include sizes(95%, 450px)
+
+@media screen and (min-width: 992px)
+    .main-frame
+        @include sizes(95%, 300px)
+
+@media screen and (min-width: 1200px)
+    .main-frame
+        @include sizes(90%, 400px)
+/* Media queries end */
+
+@import "./footer"
+@import "./animations"
