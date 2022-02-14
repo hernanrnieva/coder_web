@@ -103,6 +103,7 @@ html {
 .text-secondary {
   color: #675565 !important;
   font-size: 1.1rem;
+  padding: 15px !important;
 }
 
 .text-dark {
@@ -430,31 +431,7 @@ a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .
           animation-duration: 1.2s;
 }
 
-/* Darken */
-@-webkit-keyframes darken {
-  25% {
-    background-color: #675565;
-  }
-  100% {
-    background-color: #8dd28f;
-  }
-}
-@keyframes darken {
-  25% {
-    background-color: #675565;
-  }
-  100% {
-    background-color: #8dd28f;
-  }
-}
-
-p:hover {
-  -webkit-animation-name: darken;
-          animation-name: darken;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
+/* Primary buttons color */
 .btn-outline-primary:hover {
   background-color: #788d7c !important;
 }
