@@ -1,3 +1,42 @@
+/* Hov */
+@-webkit-keyframes hov {
+  30% {
+    -webkit-transform: scale(0.95, 0.95);
+            transform: scale(0.95, 0.95);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes hov {
+  30% {
+    -webkit-transform: scale(0.95, 0.95);
+            transform: scale(0.95, 0.95);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .img-shadowed:hover, .dropdown-toggle:hover {
+  -webkit-animation-name: hov;
+          animation-name: hov;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.img-shadowed:hover {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+/* Primary buttons color */
+.btn-outline-primary:hover {
+  background-color: #788d7c !important;
+}
+
 /* Fonts */
 @font-face {
   font-family: 'Masqualero-Regular';
@@ -14,74 +53,6 @@
   src: url("../assets/fonts/Masqualero-Italic.otf");
 }
 
-/* HTML */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Generalities start */
-.body {
-  background-image: url("../assets/imgs/bckg/background.jpg");
-  background-size: 300px auto;
-  background-attachment: fixed;
-  padding-top: 120px;
-}
-
-.mb-spaced {
-  margin-bottom: 50px !important;
-}
-
-.rounded {
-  border-radius: 20px !important;
-}
-
-.nopadding {
-  padding: 0px !important;
-}
-
-.main-frame {
-  height: 350px;
-  width: 100%;
-}
-
-.form-input {
-  background-color: #675565;
-  color: #000000 !important;
-}
-
-.bg-greenimage {
-  background-image: url(../assets/imgs/carousel/pub1b.jpg);
-}
-
-.bg-yellowimage {
-  background-image: url(../assets/imgs/carousel/pub2b.jpg);
-}
-
-.btn-outline-primary {
-  color: #8dd28f !important;
-  border-color: #8dd28f !important;
-  font-family: "Masqualero-Bold";
-  font-size: 1.5rem;
-}
-
-.btn-outline-secondary {
-  color: #bfbfbf !important;
-  border-color: #bfbfbf !important;
-  font-family: "Masqualero-Bold";
-  font-size: 1.5rem;
-}
-
-/* Generalities end */
-/* Background styling start */
-.bg-strgreen {
-  background-color: #8dd28f;
-}
-
-.bg-lightpurple {
-  background-color: #675565;
-}
-
-/* Background styling end */
 /* Text styling start*/
 .text-primary, .text-dark, .text-muted {
   font-family: "Masqualero-Bold", "serif" !important;
@@ -118,11 +89,76 @@ html {
 
 .text-input {
   color: #000000 !important;
-  font-size: 1.3rem;
 }
 
-/* Text styling end*/
-/* Navbar start */
+/* sm to md */
+@media screen and (min-width: 768px) {
+  .text-primary {
+    font-size: 1.8rem;
+  }
+  .text-primary-small {
+    font-size: 1.6rem;
+  }
+  .text-secondary {
+    font-size: 1.2rem;
+  }
+  .text-dark {
+    font-size: 1.8rem;
+  }
+  .text-muted {
+    font-size: 1.6rem;
+  }
+}
+
+.btn-outline-primary {
+  color: #8dd28f !important;
+  border-color: #8dd28f !important;
+  font-family: "Masqualero-Bold";
+  font-size: 1.5rem;
+}
+
+.btn-outline-secondary {
+  color: #bfbfbf !important;
+  border-color: #bfbfbf !important;
+  font-family: "Masqualero-Bold";
+  font-size: 1.5rem;
+}
+
+.carousel {
+  height: auto;
+  width: 100%;
+}
+
+.carousel .carousel-item {
+  height: auto;
+  width: 100%;
+  max-height: 515px;
+}
+
+.carousel-inner img {
+  margin: 0 auto;
+  vertical-align: middle;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  max-height: 515px;
+}
+
+.body {
+  background-image: url("../assets/imgs/bckg/background.jpg");
+  background-size: 300px auto;
+  background-attachment: fixed;
+  padding-top: 120px;
+}
+
+/* sm to md */
+@media screen and (min-width: 768px) {
+  .body {
+    padding-top: 130px;
+  }
+}
+
 .navbar-nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -148,31 +184,51 @@ html {
   max-width: 40px;
 }
 
-/* Navbar end */
-/* Carousel start */
-.carousel {
-  height: auto;
+.footer {
+  margin-top: 50px;
+}
+
+.footer-img {
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer-text {
+  margin-top: 6px;
+}
+
+.form-input {
+  background-color: #675565;
+  color: #000000 !important;
+}
+
+.main-frame {
+  height: 350px;
   width: 100%;
 }
 
-.carousel .carousel-item {
-  height: auto;
-  width: 100%;
-  max-height: 515px;
+@media screen and (min-width: 685px) {
+  .main-frame {
+    height: 450px;
+    width: 95%;
+  }
 }
 
-.carousel-inner img {
-  margin: 0 auto;
-  vertical-align: middle;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center center;
-     object-position: center center;
-  max-height: 515px;
+@media screen and (min-width: 992px) {
+  .main-frame {
+    height: 300px;
+    width: 95%;
+  }
 }
 
-/* Carousel end */
-/* Images styling start */
+@media screen and (min-width: 1200px) {
+  .main-frame {
+    height: 400px;
+    width: 90%;
+  }
+}
+
 .img-merch, .img-shadowed {
   height: auto;
   width: 95%;
@@ -195,11 +251,8 @@ html {
   width: 100%;
 }
 
-/* Images styling end */
-/* Media queries start */
-/* xd to sm */
+/* xs to sm */
 @media screen and (min-width: 576px) {
-  /* Img resizing */
   .img-merch, .img-shadowed {
     max-width: 350px;
   }
@@ -218,27 +271,6 @@ html {
 
 /* sm to md */
 @media screen and (min-width: 768px) {
-  /* Top padding resizing */
-  .body {
-    padding-top: 130px;
-  }
-  /* Text resizing */
-  .text-primary {
-    font-size: 1.8rem;
-  }
-  .text-primary-small {
-    font-size: 1.6rem;
-  }
-  .text-secondary {
-    font-size: 1.2rem;
-  }
-  .text-dark {
-    font-size: 1.8rem;
-  }
-  .text-muted {
-    font-size: 1.6rem;
-  }
-  /* Img resizing */
   .img-us {
     height: auto;
     width: 75%;
@@ -350,89 +382,41 @@ html {
   }
 }
 
-/* lg to xl */
-/* @media screen and (min-width: 1200px) */
-/* Fix for footer going up in a certain moment */
-@media screen and (min-width: 1324px) {
-  .img-contact {
-    height: auto;
-    width: 30%;
-  }
+/* HTML */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Media Queries for resizing video and map frames */
-@media screen and (min-width: 685px) {
-  .main-frame {
-    height: 450px;
-    width: 95%;
-  }
+/* Generalities start */
+.mb-spaced {
+  margin-bottom: 50px !important;
 }
 
-@media screen and (min-width: 992px) {
-  .main-frame {
-    height: 300px;
-    width: 95%;
-  }
+.rounded {
+  border-radius: 20px !important;
 }
 
-@media screen and (min-width: 1200px) {
-  .main-frame {
-    height: 400px;
-    width: 90%;
-  }
+.nopadding {
+  padding: 0px !important;
 }
 
-/* Media queries end */
-.footer {
-  margin-top: 50px;
+.bg-greenimage {
+  background-image: url(../assets/imgs/carousel/pub1b.jpg);
 }
 
-.footer-img {
-  width: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
+.bg-yellowimage {
+  background-image: url(../assets/imgs/carousel/pub2b.jpg);
 }
 
-.footer-text {
-  margin-top: 6px;
+/* Generalities end */
+/* Background styling start */
+.bg-strgreen {
+  background-color: #8dd28f;
 }
 
-/* Hov */
-@-webkit-keyframes hov {
-  30% {
-    -webkit-transform: scale(0.95, 0.95);
-            transform: scale(0.95, 0.95);
-  }
-  100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
-@keyframes hov {
-  30% {
-    -webkit-transform: scale(0.95, 0.95);
-            transform: scale(0.95, 0.95);
-  }
-  100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
+.bg-lightpurple {
+  background-color: #675565;
 }
 
-a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .img-shadowed:hover, .dropdown-toggle:hover {
-  -webkit-animation-name: hov;
-          animation-name: hov;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-}
-
-.img-shadowed:hover {
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-}
-
-/* Primary buttons color */
-.btn-outline-primary:hover {
-  background-color: #788d7c !important;
-}
+/* Background styling end */
 /*# sourceMappingURL=style.css.map */

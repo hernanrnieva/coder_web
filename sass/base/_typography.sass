@@ -1,0 +1,60 @@
+/* Fonts */
+@font-face
+    font-family: 'Masqualero-Regular'
+    src: url("../assets/fonts/Masqualero-Regular.otf")
+
+@font-face
+    font-family: 'Masqualero-Bold'
+    src: url("../assets/fonts/Masqualero-Bold.otf")
+
+@font-face
+    font-family: 'Masqualero-Italic'
+    src: url("../assets/fonts/Masqualero-Italic.otf")
+
+/* Text styling start*/
+.text-primary, .text-dark, .text-muted
+    font-family: map-get($fonts, masqbold), map-get($fonts, serif) !important
+
+.text-secondary, .text-muted, .text-input
+    font-family: map-get($fonts, masqitalic), map-get($fonts, serif) !important
+
+.text-primary
+    color: map-get($colors, gold) !important
+    font-size: 1.6rem
+
+.text-primary-small
+    font-size: 1.4rem
+
+.text-secondary
+    color: map-get($colors, lightpurple) !important
+    font-size: 1.1rem
+    padding: 15px !important
+
+.text-dark
+    color: map-get($colors, black) !important
+    font-size: 1.5rem
+    // text-shadow: 0 0 5px grey
+
+.text-muted
+    color: map-get($colors, black) !important
+    font-size: 1.2rem
+
+.text-input
+    color: map-get($colors, black) !important
+
+/* sm to md */
+@media screen and (min-width: 768px)
+    .text-primary
+        font-size: 1.8rem
+
+    .text-primary-small
+        font-size: 1.6rem
+
+    .text-secondary
+        font-size: 1.2rem
+
+    .text-dark
+        font-size: 1.8rem
+
+    .text-muted
+        font-size: 1.6rem

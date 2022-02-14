@@ -1,0 +1,95 @@
+.img-merch
+    @include sizes(95%, auto)
+    margin-top: 10px
+    margin-bottom: 10px
+
+.img-shadowed
+    @extend .img-merch
+    box-shadow: 5px 5px 5px 5px map-get($colors, black)
+
+.img-us, .img-place
+    @include sizes(90%, auto)
+
+.img-contact
+    @include sizes(100%, auto)
+
+/* xs to sm */
+@media screen and (min-width: 576px)
+    .img-merch
+        max-width: 350px
+
+    .img-shadowed
+        max-width: 300px
+
+    .img-us
+        @include sizes(80%, auto)
+
+    .img-contact
+        @include sizes(70%, auto)
+
+/* sm to md */
+@media screen and (min-width: 768px)
+    .img-us
+        @include sizes(75%, auto)
+
+    .img-contact
+        @include sizes(50%, auto)
+
+/* md to lg */
+@media screen and (min-width: 992px)
+    /* Merch grid display implementation */
+    .grid
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .img-merch
+        max-width: 600px
+
+    .grid-merch
+        grid-gap: 20px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-template-areas: "hat box apron apron" "bags bags apron apron" "shirt shirt cup cup0" "shirt shirt van van"
+        justify-content: stretch
+        justify-items: stretch
+        align-items: stretch
+        align-content: stretch
+        max-width: 1400px
+
+    .img-shadowed
+        object-fit: cover
+        @include sizes(100%, 100%)
+        max-width: none
+        padding: 0px
+
+    .hat
+        grid-area: hat
+
+    .apron
+        grid-area: apron
+
+    .bags
+        grid-area: bags
+
+    .box
+        grid-area: box
+
+    .cup
+        grid-area: cup
+
+    .cup0
+        grid-area: cup0
+
+    .shirt
+        grid-area: shirt
+
+    .van
+        grid-area: van
+
+    /* Img resizing */
+    .img-us
+        @include sizes(95%, auto)
+
+    .img-contact
+        @include sizes(40%, auto)
