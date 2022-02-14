@@ -39,8 +39,8 @@ html
     @include sizes(100%, 350px)
 
 .form-input
-    background-color: map-get($colors, sapgreen)
-    color: map-get($colors, darkgreen) !important
+    background-color: map-get($colors, lightpurple)
+    color: map-get($colors, black) !important
 
 .bg-greenimage
     background-image: url(../assets/imgs/carousel/pub1b.jpg)
@@ -51,10 +51,10 @@ html
 
 /* Background styling start */
 .bg-lightgreen
-    background-color: map-get($colors, lime)
+    background-color: map-get($colors, strgreen)
 
 .bg-lightpurple
-    background-color: map-get($colors, sapgreen)
+    background-color: map-get($colors, lightpurple)
 /* Background styling end */
 
 /* Text styling start*/
@@ -65,27 +65,27 @@ html
     font-family: map-get($fonts, masqitalic), map-get($fonts, serif) !important
 
 .text-primary
-    color: map-get($colors, lime) !important
+    color: map-get($colors, gold) !important
     font-size: 1.6rem
 
 .text-primary-small
     font-size: 1.4rem
 
 .text-secondary
-    color: map-get($colors, huntergreen) !important
+    color: map-get($colors, lightpurple) !important
     font-size: 1.1rem
 
 .text-dark
-    color: map-get($colors, darkgreen) !important
+    color: map-get($colors, black) !important
     font-size: 1.5rem
-    text-shadow: 0 0 5px grey
+    // text-shadow: 0 0 5px grey
 
 .text-muted
-    color: map-get($colors, sapgreen) !important
+    color: map-get($colors, black) !important
     font-size: 1.2rem
 
 .text-input
-    color: map-get($colors, darkgreen) !important
+    color: map-get($colors, black) !important
     font-size: 1.3rem
 /* Text styling end*/
 
@@ -133,7 +133,7 @@ html
 
 .img-merch-shadowed
     @extend .img-merch
-    box-shadow: 5px 5px 5px 5px map-get($colors, darkgreen)
+    box-shadow: 5px 5px 5px 5px map-get($colors, black)
 
 .img-us, .img-place
     @include sizes(90%, auto)

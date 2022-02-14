@@ -41,8 +41,8 @@ html {
 }
 
 .form-input {
-  background-color: #4f772d;
-  color: #132a13 !important;
+  background-color: #675565;
+  color: #000000 !important;
 }
 
 .bg-greenimage {
@@ -56,11 +56,11 @@ html {
 /* Generalities end */
 /* Background styling start */
 .bg-lightgreen {
-  background-color: #ecf39e;
+  background-color: #8dd28f;
 }
 
 .bg-lightpurple {
-  background-color: #4f772d;
+  background-color: #675565;
 }
 
 /* Background styling end */
@@ -74,7 +74,7 @@ html {
 }
 
 .text-primary {
-  color: #ecf39e !important;
+  color: #d99700 !important;
   font-size: 1.6rem;
 }
 
@@ -83,23 +83,22 @@ html {
 }
 
 .text-secondary {
-  color: #31572c !important;
+  color: #675565 !important;
   font-size: 1.1rem;
 }
 
 .text-dark {
-  color: #132a13 !important;
+  color: #000000 !important;
   font-size: 1.5rem;
-  text-shadow: 0 0 5px grey;
 }
 
 .text-muted {
-  color: #4f772d !important;
+  color: #000000 !important;
   font-size: 1.2rem;
 }
 
 .text-input {
-  color: #132a13 !important;
+  color: #000000 !important;
   font-size: 1.3rem;
 }
 
@@ -163,8 +162,8 @@ html {
 }
 
 .img-merch-shadowed {
-  -webkit-box-shadow: 5px 5px 5px 5px #132a13;
-          box-shadow: 5px 5px 5px 5px #132a13;
+  -webkit-box-shadow: 5px 5px 5px 5px #000000;
+          box-shadow: 5px 5px 5px 5px #000000;
 }
 
 .img-us, .img-place {
@@ -416,18 +415,18 @@ a .text-dark:hover, a .text-muted:hover, a .footer-img:hover, .img-logo:hover, .
 /* Darken */
 @-webkit-keyframes darken {
   25% {
-    background-color: #4f772d;
+    background-color: #675565;
   }
   100% {
-    background-color: #ecf39e;
+    background-color: #8dd28f;
   }
 }
 @keyframes darken {
   25% {
-    background-color: #4f772d;
+    background-color: #675565;
   }
   100% {
-    background-color: #ecf39e;
+    background-color: #8dd28f;
   }
 }
 
