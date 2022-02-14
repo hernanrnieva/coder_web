@@ -130,11 +130,11 @@ html
 
 /* Images styling start */
 .img-merch
-    padding-top: 10px
-    padding-bottom: 10px
     @include sizes(95%, auto)
+    margin-top: 10px
+    margin-bottom: 10px
 
-.img-merch-shadowed
+.img-shadowed
     @extend .img-merch
     box-shadow: 5px 5px 5px 5px map-get($colors, black)
 
@@ -152,7 +152,7 @@ html
     .img-merch
         max-width: 350px
 
-    .img-merch-shadowed
+    .img-shadowed
         max-width: 300px
 
     .img-us
@@ -212,7 +212,7 @@ html
         align-content: stretch
         max-width: 1400px
 
-    .img-merch-shadowed
+    .img-shadowed
         object-fit: cover
         @include sizes(100%, 100%)
         max-width: none
