@@ -24,7 +24,11 @@ html {
   background-image: url("../assets/imgs/bckg/background.jpg");
   background-size: 300px auto;
   background-attachment: fixed;
-  padding-top: 100px;
+  padding-top: 120px;
+}
+
+.mb-spaced {
+  margin-bottom: 50px !important;
 }
 
 .rounded {
@@ -201,7 +205,7 @@ html {
 @media screen and (min-width: 768px) {
   /* Top padding resizing */
   .body {
-    padding-top: 110px;
+    padding-top: 130px;
   }
   /* Text resizing */
   .text-primary {
@@ -365,7 +369,7 @@ html {
 
 /* Media queries end */
 .footer {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .footer-img {
