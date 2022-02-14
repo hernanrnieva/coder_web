@@ -57,6 +57,20 @@ html {
   background-image: url(../assets/imgs/carousel/pub2b.jpg);
 }
 
+.btn-outline-primary {
+  color: #8dd28f !important;
+  border-color: #8dd28f !important;
+  font-family: "Masqualero-Bold";
+  font-size: 1.5rem;
+}
+
+.btn-outline-secondary {
+  color: #bfbfbf !important;
+  border-color: #bfbfbf !important;
+  font-family: "Masqualero-Bold";
+  font-size: 1.5rem;
+}
+
 /* Generalities end */
 /* Background styling start */
 .bg-lightgreen {
@@ -439,5 +453,9 @@ p:hover {
           animation-name: darken;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+}
+
+.btn-outline-primary:hover {
+  background-color: #788d7c !important;
 }
 /*# sourceMappingURL=style.css.map */
